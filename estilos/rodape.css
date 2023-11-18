@@ -1,13 +1,8 @@
-.head {
-
-}
-
-
-
-
 #rodape {
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 150px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: rgb(211, 244, 245);
@@ -20,17 +15,16 @@
 }
 
 .pagSeg {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 /*----------------------- MEIOS DE PAGAMENTO -----------------------*/
 #meiosPagamento {
-  flex: 1;
+  justify-items: center;
   vertical-align: top;
   margin-left: 50px;
-  background-color: black;
 }
 
 .txtPag {
@@ -57,10 +51,8 @@
 
 /*----------------------- SEGURANÇA -----------------------*/
 #segurancaPagamento {
-  flex: 1;
   vertical-align: top;
   margin-right: 50px;
-  background-color: blue;
 }
 
 .txtSeg {

@@ -18,7 +18,7 @@
   <body>
 
     <div class="conteudo">
-      <div class="txtConteudor">
+      <div class="txtConteudo">
         <h1>oBoticário</h1>
         <h2>Faça login em sua conta</h2> 
       </div>
@@ -30,9 +30,14 @@
         </div>
         
         <div class="boxLoginEmail">
-            <input type="email" placeholder="Email:*">
+
+          <div class="inputBox">
+            <input type="email" required="required">
+            <span>Email:</span>
+          </div>
+
           <div class="boxLoginEmailTxt">
-            <span>
+            <span class="txtLoginEmail">
               <p>Esqueci meu e-mail</p>
             </span>
           </div>
@@ -64,7 +69,6 @@
 
 
     <div id="rodape">
-
       <div class="pagSeg">
         <div id="meiosPagamento">
           <div class="txtPag">
@@ -99,7 +103,6 @@
       <div class="obotiCopy">
         <p class="rodapeTexto"> &#169; 2007-2023 O Boticário</p>
       </div>
-
     </div>
   </body>
 </html>

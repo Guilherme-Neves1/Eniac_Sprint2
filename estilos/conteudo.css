@@ -1,15 +1,34 @@
+/*---------------------- CONTEÚDO TOTAL ----------------------*/
 .conteudo {
-  background-color: gray;
+  position: fixed;
+  background-color: rgb(243, 243, 243);
   display: grid;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 250px;
 }
 
-.conteudo h1, h2 {
-  font-family: 'Cinzel';
+.conteudo h1 {
+  font-family: 'Cinzel', Arial;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.conteudo h2 {
+  font-family: 'Roboto', Arial;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 /*---------------------- CAIXA LOGIN ----------------------*/
+.txtConteudo {
+  margin-top: 150px;
+}
+
 .boxLogin {
   background-color: lightblue;
   padding: 50px 50px;
@@ -18,6 +37,7 @@
   width: 400px;
 }
 
+/*---------------------- CAIXA LOGIN - 1 ----------------------*/
 .txtBoxCima {
   font-family: 'Noto Sans Mandaic';
   line-height: 25px;
@@ -34,6 +54,7 @@
   font-size: 15px;
 }
 
+/*---------------------- CAIXA LOGIN - 2 ----------------------*/
 .boxLoginEmail {
   width: 100%;
   margin-top: 15px;
@@ -41,25 +62,61 @@
   display: block;
 }
 
+.inputBox {
+  position: relative;
+  width: 100%;
+}
 
-.boxLoginEmail input {
-  width: 98.5%;
-  padding-top: 14px;
-  padding-bottom: 14px;
+.inputBox input {
+  width: 100%;
+  padding: 14px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   border-radius: 5px;
-}
-
-.boxLoginEmail input::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: 700;
-  padding-left: 10px;
-  font-size: 13px;
-}
-
-.boxLoginEmail input::placeholder::content {
+  outline: none;
   color: black;
-  padding-left: 10px;
+  font-size: 1em;
+  transition: 0.25s;
+  transition: box-shadow 0.35s;
+}
+
+.inputBox input:hover {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.15);
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.25s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+  color: rgba(0, 0, 0);
+  transform: translateX(15px) translateY(-10px);
+  font-size: 0.75em;
+  padding: 0 10px;
+  background-color: lightblue;
+  border-left: 1px solid rgb(153, 64, 236);
+  border-right: 1px solid rgb(153, 64, 236);
+  letter-spacing: 0.1em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid rgb(153, 64, 236);
+}
+
+.inputBox:nth-child(1) input:valid ~ span,
+.inputBox:nth-child(1) input:focus ~ span{
+  color: black;
+  background-color: rgba(153, 64, 236);
+  border-radius: 2px;
 }
 
 .boxLoginEmailTxt{
@@ -73,19 +130,20 @@
   font-size: 15px;
 }
 
-.boxLoginEmail span {
+.boxLoginEmail .txtLoginEmail {
   position: absolute;
   cursor: pointer;
-  border-bottom: 2px solid rgb(177, 8, 255);
+  border-bottom: 2px solid rgb(153, 64, 236);
   padding-bottom: 5px;
   transition: padding-bottom 0.1s;
 }
 
-.boxLoginEmail span:hover {
+.boxLoginEmail .txtLoginEmail:hover {
   transform: scale(1, 1);
   padding-bottom: 1px;
 }
 
+/*---------------------- CAIXA LOGIN - 3 ----------------------*/
 .continueButton {
   font-family: 'Roboto';
   font-size: 16px;
@@ -104,6 +162,7 @@
   background-color: rgba(153, 64, 236, 0.7);
 }
 
+/*---------------------- CAIXA LOGIN - 4 ----------------------*/
 .otherOption {
   color: rgba(0, 0, 0, 0.8);
   margin-top: 18px;
@@ -136,10 +195,13 @@
     right: -7.25em;
 }
 
+/*---------------------- CAIXA LOGIN - 5 ----------------------*/
 .sectionGoogle img {
   position: absolute;
-  
-  width: 40px;
+  margin-left: 70px;
+  width: 45px;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
 .googleButton {
@@ -152,15 +214,20 @@
   border-radius: 5px;
   padding: 12px 10px;
   width: 100%;
-  cursor: pointer;
   margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
 .googleButton:hover {
-  background-color: rgba(240, 240, 240, 0.8);
+  background-color: rgba(255, 255, 255,0.8);
 }
 
+/*---------------------- CAIXA LOGIN - 6 ----------------------*/
 .captcha {
   color: rgba(0, 0, 0, 0.5);
   font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
