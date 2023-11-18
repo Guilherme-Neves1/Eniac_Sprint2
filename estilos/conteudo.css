@@ -5,10 +5,11 @@
   align-items: center;
 }
 
-.conteudo h1 {
+.conteudo h1, h2 {
   font-family: 'Cinzel';
 }
 
+/*---------------------- CAIXA LOGIN ----------------------*/
 .boxLogin {
   background-color: lightblue;
   padding: 50px 50px;
@@ -16,13 +17,98 @@
   border-radius: 15px;
 }
 
+.txtBoxCima {
+  font-family: 'Noto Sans Mandaic';
+  line-height: 25px;
+}
+
+.txtBoxCima .cimaUm {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.txtBoxCima .cimaDois {
+  font-weight: 700;
+  color: rgb(63, 63, 63);
+  font-size: 15px;
+}
+
+.boxLoginEmail {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+.boxLoginEmail input {
+  width: 98.5%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.boxLoginEmail input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 700;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+.boxLoginEmail input::placeholder::content {
+  color: black;
+  padding-left: 10px;
+}
+
+.boxLoginEmailTxt{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+  font-size: 15px;
+}
+
+.boxLoginEmail span {
+  position: absolute;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(177, 8, 255);
+  padding-bottom: 5px;
+  transition: padding-bottom 0.1s;
+}
+
+.boxLoginEmail span:hover {
+  transform: scale(1, 1);
+  padding-bottom: 1px;
+}
+
 .continueButton {
+  font-family: 'Roboto';
+  font-size: 16px;
   color: white;
   font-weight: bold;
   background-color: rgb(153, 64, 236);
   border: none;
-  border-radius: 10px;
-  padding: 10px 10px;
+  border-radius: 5px;
+  padding: 12px 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.continueButton:hover {
+  background-color: rgba(153, 64, 236, 0.7);
+}
+
+.otherOption {
+  background-color: lightgreen;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .googleButton {

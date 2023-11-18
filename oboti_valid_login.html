@@ -12,7 +12,7 @@
     <!--------------------- FONTES -------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Noto+Sans+Mandaic&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -24,16 +24,27 @@
       </div>
 
       <div class="boxLogin">
-        <p>Olá</p>
-        <p>Para continuar, digite seu e-mail</p>
+        <div class="txtBoxCima">
+          <p class="cimaUm">Olá!</p>
+          <p class="cimaDois">Para continuar, digite seu e-mail</p>
+        </div>
+        
+        <div class="boxLoginEmail">
+            <input type="email" placeholder="Email:*">
+          <div class="boxLoginEmailTxt">
+            <span>
+              <p>Esqueci meu e-mail</p>
+            </span>
+          </div>
+        </div>
 
-        <input type="email" placeholder="Email:*">
+        <div>
+          <button class="continueButton">Continuar</button>
+        </div>
 
-        <p>Esqueci meu e-mail</p>
-
-        <button class="continueButton">Continuar</button>
-
-        <p>ou utilize sua conta</p>
+        <div class="otherOption">
+          <p>ou utilize sua conta</p>
+        </div>
 
         <button class="googleButton">Google</button>
 
