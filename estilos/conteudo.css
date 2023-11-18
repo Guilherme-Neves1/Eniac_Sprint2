@@ -1,0 +1,35 @@
+.conteudo {
+  background-color: gray;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo h1 {
+  font-family: 'Cinzel';
+}
+
+.boxLogin {
+  background-color: lightblue;
+  padding: 50px 50px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.continueButton {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(153, 64, 236);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.googleButton {
+  color: white;
+  font-weight: bold;
+  background-color: rgb(153, 64, 236);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
