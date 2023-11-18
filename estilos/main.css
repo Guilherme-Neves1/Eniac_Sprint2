@@ -104,8 +104,6 @@ p {
     justify-items: center;
   }
 
-
-
   #segurancaPagamento .txtSeg {
     display: flex;
     align-items: center;
@@ -116,5 +114,4 @@ p {
   #segurancaPagamento .imgSeg{
     grid-template-columns: 1fr;
   }
-
 }
