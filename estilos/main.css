@@ -14,3 +14,107 @@ p {
   padding: 0;
   box-sizing: border-box;
 }
+
+@media (min-width: 400px) and (max-width: 1150px) {
+  body {
+    height: 1000px;
+  }
+
+  .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: -100px;
+    margin-bottom: -50px;
+
+  }
+
+  .conteudo .txtConteudo {
+    margin-top: 75px;
+  }
+
+  .conteudo .txtConteudo h1{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+  }
+  
+  .conteudo .txtConteudo h2{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .boxLogin {
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .boxLogin .txtBoxCima .cimaUm{
+    font-size: 15px;
+  }
+  
+  .boxLogin .txtBoxCima .cimaDois{
+    font-size: 12px;
+  }
+
+  .boxLoginEmail .inputBox input {
+    padding: 10px;
+  
+  }
+
+  .boxLoginEmailTxt .txtLoginEmail {
+    font-size: 13px;
+  }
+
+  .otherOption span{
+    font-size: 13px;
+  }
+
+  .sectionGoogle img {
+    display: none;
+    font-size: 5px;
+    width: 90px;
+  }
+
+  #rodape .pagSeg{
+    grid-template-columns: 1fr;
+  }
+
+  .pagSeg #segurancaPagamento {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .pagSeg #meiosPagamento {
+    display: none;
+  }
+
+  #meiosPagamento .txtPag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+
+
+  #segurancaPagamento .txtSeg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  #segurancaPagamento .imgSeg{
+    grid-template-columns: 1fr;
+  }
+
+}

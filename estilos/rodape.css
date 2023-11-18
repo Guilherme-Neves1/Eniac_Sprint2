@@ -20,33 +20,6 @@
   justify-items: center;
 }
 
-@media (max-width: 1150px) {
-
-  .pagSeg {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .pagSeg #meiosPagamento {
-    margin-left: 0;
-  }
-
-  .pagSeg #segurancaPagamento {
-    margin-right: 0;
-  }
-
-  .obotiCopy {
-    padding-top: 15px;
-  }
-
-  #rodape {
-    height: 240px;
-    padding-top: 15px;
-  }
-}
-
 /*----------------------- MEIOS DE PAGAMENTO -----------------------*/
 #meiosPagamento {
   justify-items: center;
