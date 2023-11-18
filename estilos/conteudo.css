@@ -26,7 +26,8 @@
 
 /*---------------------- CAIXA LOGIN ----------------------*/
 .txtConteudo {
-  margin-top: 150px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .boxLogin {
@@ -226,7 +227,7 @@
 /*---------------------- CAIXA LOGIN - 6 ----------------------*/
 .captcha {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 10px;
+  font-size: 11px;
   display: flex;
   justify-content: center;
   align-items: center;
