@@ -24,6 +24,13 @@
   display: flex;
 }
 
+@media (max-width: 1150px) {
+  .conteudo {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 /*---------------------- CAIXA LOGIN ----------------------*/
 .txtConteudo {
   padding-top: 60px;

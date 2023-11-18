@@ -21,10 +21,6 @@
 }
 
 @media (max-width: 1150px) {
-  .conteudo {
-    height: 100vh;
-    width: 100vh;
-  }
 
   .pagSeg {
     grid-template-columns: 1fr;
@@ -49,8 +45,6 @@
     height: 240px;
     padding-top: 15px;
   }
-
-
 }
 
 /*----------------------- MEIOS DE PAGAMENTO -----------------------*/
