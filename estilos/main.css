@@ -78,9 +78,7 @@ p {
   }
 
   .sectionGoogle img {
-    display: none;
-    font-size: 5px;
-    width: 90px;
+    margin-left: -23px;
   }
 
   #rodape .pagSeg{
