@@ -1,0 +1,139 @@
+.sacola .sacolaFrete {
+  background-color: lightcoral;
+  padding: 25px 15px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 15px 150px;
+}
+
+.sacola .sacolaFrete h1{
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.sacola .sacolaFrete h1 span{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sacola .sacolaFrete .sacolaFreteProdutos {
+  margin-bottom: 25px;
+}
+
+.sacola .sacolaFreteInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.sacola .sacolaFreteInput input{
+  padding: 10px; 
+  outline-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 7px;
+  transition: 0.15s;
+}
+
+.sacola .sacolaFreteInput input:valid,
+.sacola .sacolaFreteInput input:focus{
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sacola .sacolaFreteInput button{
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(153, 64, 236);
+  background-color: rgb(153, 64, 236);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.sacola .sacolaFreteInput button:hover{
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.15);
+  background-color: rgba(153, 64, 236,0.8);
+}
+
+.sacola .sacolaFreteInput p{
+  margin-left: 15px;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: gray;
+  letter-spacing: 0.7px;
+  transition: 0.15s;
+}
+
+.sacola .sacolaFreteInput p:hover{
+  color: rgb(153, 64, 236, 0.8);
+}
+
+.sacola .sacolaFretePrazo h2{
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.sacola .sacolaFrete .formaEntrega {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 25px;
+  line-height: 45px;
+  padding-bottom: 15px;
+}
+
+.formaEntrega .formaEntregaNormal{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formaEntregaNormal .entregaNormalInput {
+  font-size: 15px;
+  color: black;
+  padding-left: 15px;
+}
+
+.formaEntregaNormal .entregaNormalPreco h1{
+  font-size: 15px;
+  color: black;
+  padding-right: 15px;
+}
+
+/*------------------ LOJA ------------------*/
+.formaEntrega .formaEntregaLoja{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formaEntregaLoja .entregaLojaInput {
+  font-size: 15px;
+  color: black;
+  padding-left: 15px;
+}
+
+.formaEntregaLoja .entregaLojaInput p{
+  font-size: 12px;
+  line-height: 25px;
+  text-decoration: underline;
+  color: black;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.formaEntregaLoja .entregaLojaInput p:hover{
+  color: rgb(153, 64, 236);
+}
+
+.formaEntregaLoja .entregaLojaPreco h1{
+  font-size: 15px;
+  color: rgb(153, 64, 236);
+  padding-right: 15px;
+}
+
+
