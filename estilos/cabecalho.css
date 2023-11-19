@@ -73,6 +73,10 @@
   background-color: rgba(32, 178, 170, 0.9);
 }
 
+.header .headerMiddle img:active {
+  padding: 15px;
+}
+
 .header .headerRight {
   display: flex;
   align-items: center;
@@ -88,7 +92,11 @@
 }
 
 .header .headerRight img:hover{
-  width: 32px;
+  width: 30px;
+}
+
+.header .headerRight img:active{
+  width: 40px;
 }
 
 .menu{
