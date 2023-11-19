@@ -48,11 +48,13 @@
     margin-top: 1350px;
     width: 95%;
   }
+
+  .finalizarCompra .temCupom .cupomInput button{
+    margin-top: 10px;
+  }
 }
 
-
-
-
+/*----------------- SACOLA ----------------*/
 .sacola {
   display: grid;
   grid-template-columns: 1fr 370px;
