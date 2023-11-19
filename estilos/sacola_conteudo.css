@@ -1,9 +1,16 @@
+.sacola {
+  display: grid;
+  grid-template-columns: 1fr 370px;
+  justify-content: space-between;
+  column-gap: 50px;
+  padding: 50px 150px;
+}
+
 .sacola .sacolaFrete {
-  background-color: lightcoral;
   padding: 25px 15px;
-  border: 1px solid gray;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 1px black;
   border-radius: 10px;
-  margin: 15px 150px;
 }
 
 .sacola .sacolaFrete h1{
@@ -30,7 +37,7 @@
 .sacola .sacolaFreteInput input{
   padding: 10px; 
   outline-style: none;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   width: 250px;
   margin-right: 7px;
@@ -80,7 +87,7 @@
 
 .sacola .sacolaFrete .formaEntrega {
   display: block;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   margin-top: 25px;
   line-height: 45px;
@@ -135,5 +142,155 @@
   color: rgb(153, 64, 236);
   padding-right: 15px;
 }
+
+.prodQtdPrc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+
+}
+
+.sacolaFrete .prodQtdPrc h1{
+font-size: 16px;
+}
+
+/*--------------------- BOX FINALIZAR COMPRA ---------------------*/
+.finalizarCompra {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 1px black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.finalizarCompra .finalizarCompraButton {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(153, 64, 236);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  transition: 0.15s;
+}
+
+.finalizarCompra .finalizarCompraButton:hover {
+  background-color: rgba(153, 64, 236, 0.9);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.15);
+}
+
+.finalizarCompra .finalizarProdPrc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.finalizarCompra .finalizarProdPrc h1{
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+}
+
+.finalizarCompra .presente button {
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(153, 64, 236);
+  border-radius: 5px;
+  color: rgb(153, 64, 236);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(153, 64, 236);
+  transition: 0.15s;
+}
+
+.finalizarCompra .presente button:hover {
+  background-color: rgb(153, 64, 236);
+  color: white;
+}
+
+.presente .imgButtonPresent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.presente .imgButtonPresent img{
+  margin-left: 35px;
+  position: absolute;
+  width: 25px;
+  cursor: pointer;
+}
+
+.presente p{
+  text-align: justify;
+  font-size: 13px;
+  margin-top: 5px;
+  padding: 5px 15px 20px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/*-------------------------- SUBTOTAL --------------------------*/
+.sacola .finalizarCompra .subPrc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sacola .finalizarCompra .subPrc h1{
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+.finalizarCompra .temCupom {
+  background-color: rgba(158, 158, 158, 0.1);
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.finalizarCompra .temCupom h1{
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.finalizarCompra .temCupom input{
+  font-size: 1em;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  padding: 5px;
+}
+
+.temCupom .cupomInput button{
+  padding: 7px;
+  border: 3px solid rgb(153, 64, 236);
+  border-radius: 15px;
+  color: rgb(153, 64, 236);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+  transition: 0.15s;
+}
+
+.temCupom .cupomInput button:hover{
+  background-color: rgb(153, 64, 236);
+  color: white;
+}
+
+
+
 
 
