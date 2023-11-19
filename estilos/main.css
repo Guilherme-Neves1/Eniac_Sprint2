@@ -114,4 +114,8 @@ p {
   #segurancaPagamento .imgSeg{
     grid-template-columns: 1fr;
   }
+
+  .conteudo .captcha p{
+    font-size: 10px;
+  }
 }

@@ -29,6 +29,15 @@
   padding-bottom: 30px;
 }
 
+.txtConteudo h1{
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.txtConteudo h1:hover{
+  letter-spacing: 0.5px;
+}
+
 .boxLogin {
   background-color: lightblue;
   padding: 50px 50px;
@@ -136,9 +145,15 @@
   border-bottom: 2px solid rgb(153, 64, 236);
   padding-bottom: 5px;
   transition: padding-bottom 0.1s;
+  transition: color 0.15s;
 }
 
 .boxLoginEmail .txtLoginEmail:hover {
+  color: rgb(153, 64, 236);
+}
+
+
+.boxLoginEmail .txtLoginEmail:active {
   transform: scale(1, 1);
   padding-bottom: 1px;
 }
@@ -155,11 +170,17 @@
   padding: 12px 10px;
   width: 100%;
   cursor: pointer;
-  transition: background-color 0.15s;
+  transition: 0.15s;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .continueButton:hover {
   background-color: rgba(153, 64, 236, 0.7);
+}
+
+.continueButton:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 0, inset 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
 }
 
 /*---------------------- CAIXA LOGIN - 4 ----------------------*/
@@ -221,6 +242,14 @@
 
 .googleButton:hover {
   background-color: rgba(255, 255, 255,0.8);
+}
+
+.sectionGoogle {
+  transition: 0.15s;
+}
+
+.sectionGoogle:active {
+  transform: translate(0px, 2px);
 }
 
 /*---------------------- CAIXA LOGIN - 6 ----------------------*/
