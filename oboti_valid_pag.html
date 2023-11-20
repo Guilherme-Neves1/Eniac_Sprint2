@@ -23,117 +23,125 @@
 
 </head>
 <body>
-
+  <div class="pagMarca">
+    <h1>oBoticário</h1>
+  </div>
+  
   <div id="container">
     <nav class="pagamento">
-    <form class="boxPagamento" action="" name="formaDePagamento">
-      <div class="formaPagamento">
-        <h1>Selecione a forma de pagamento</h1>
-        
-        <div class="imgButtonPix">
+      <form class="boxPagamento" action="" name="formaDePagamento">
+        <div class="formaPagamento">
+          <h1>Selecione a forma de pagamento</h1>
           
-          <button class="aproveitePixButton">
-            <img src="imagens/icons/icon-pix.png" alt="">
-            <p>
-              Aproveite para utilizar o pagamento com PIX, é rápido e fácil!
-            </p>
-            </button>
-        </div>
-
-        <div class="comCartao">
-          <div class="comCartaoInput">
-            <input type="radio" checked>
-            <label for="cartao">Pagar com cartão de crédito</label>
+          <div class="imgButtonPix">
+            <button class="aproveitePixButton">
+              <img src="imagens/icons/icon-pix.png" alt="">
+              <p>
+                Aproveite para utilizar o pagamento com PIX, é rápido e fácil!
+              </p>
+              </button>
           </div>
 
-          <div class="comCartaoOp">
-            <label for="numero">Número:</label>
-            <input type="number" required id="numero" placeholder="0000 0000 0000 0000">
-            
-            <label for="titular">Nome do titular:</label>
-            <input type="text" required id="titular" placeholder="Nome impresso no cartão">
+          <div class="comCartao">
+            <div class="comCartaoInput">
+              <input type="radio" checked>
+              <label for="cartao">Pagar com cartão de crédito</label>
+            </div>
 
-            <div class="comCartaoOpValid">
-              <label for="validade">Data de validade:</label>
-              <label for="cvv">CVV:</label>
+            <div class="comCartaoOp">
+              <label for="numero">Número:</label>
+              <input type="number" required id="numero" placeholder="0000 0000 0000 0000">
               
-              <input type="month" required id="data">
-              <input type="number" maxlength="3" required placeholder="000" id="cvv">
+              <label for="titular">Nome do titular:</label>
+              <input type="text" required id="titular" placeholder="Nome impresso no cartão">
+
+              <div class="comCartaoOpValid">
+                <label for="validade">Data de validade:</label>
+                <label for="cvv">CVV:</label>
+                
+                <input type="month" required id="data">
+                <input type="number" maxlength="3" required placeholder="000" id="cvv">
+              </div>
+
+
+                <label for="parcela">Parcelas:</label>
+                <select class="selectParc" name="parcelas" id="parcelas">
+                  <option value="1x">Á vista R$ 0,00</option>
+                  <option value="2x">2x de R$ 0,00</option>
+                  <option value="3x">3x de R$ 0,00</option>
+                  <option value="4x">4x de R$ 0,00</option>
+                  <option value="5x">5x de R$ 0,00</option>
+                  <option value="6x">6x de R$ 0,00</option>
+                  <option value="7x">7x de R$ 0,00</option>
+                  <option value="8x">8x de R$ 0,00</option>
+                  <option value="9x">9x de R$ 0,00</option>
+                  <option value="10x">10x de R$ 0,00</option>
+                </select>
+
+              <div class="salvarCartao">
+                <input type="checkbox" required id="salvarCartao">
+                <label for="salvarcartao">Salvar Cartão para próxima compra</label>
+              </div>
+
             </div>
-
-
-              <label for="parcela">Parcelas:</label>
-              <select class="selectParc" name="parcelas" id="parcelas">
-                <option value="1x">Á vista R$ 0,00</option>
-                <option value="2x">2x de R$ 0,00</option>
-                <option value="3x">3x de R$ 0,00</option>
-                <option value="4x">4x de R$ 0,00</option>
-                <option value="5x">5x de R$ 0,00</option>
-                <option value="6x">6x de R$ 0,00</option>
-                <option value="7x">7x de R$ 0,00</option>
-                <option value="8x">8x de R$ 0,00</option>
-                <option value="9x">9x de R$ 0,00</option>
-                <option value="10x">10x de R$ 0,00</option>
-              </select>
-
-            <div class="salvarCartao">
-              <input type="checkbox" required id="salvarCartao">
-              <label for="salvarcartao">Salvar Cartão para próxima compra</label>
-            </div>
-
           </div>
-        </div>
 
-        <div class="comPixInput">
-          <input type="radio">
-          <label for="pix">Pagar com PIX</label>
-        </div>
+          <div class="comPixInput">
+            <input type="radio">
+            <label for="pix">Pagar com PIX</label>
+          </div>
 
-        <div class="comBolInput">
-          <input type="radio">
-          <label for="boleto">Pagar com Boleto Bancário</label>
-        </div>
+          <div class="comBolInput">
+            <input type="radio">
+            <label for="boleto">Pagar com Boleto Bancário</label>
+          </div>
 
-      </div>
+        </div>
     </nav>
       
     <nav class="resumo">
-        <div class="resumoBox">
-          <h1>Resumo do pedido</h1>
-          
-          <div class="resumoDesc">
-            <div class="resumoDescProd">
-              <p>Produtos: (0 itens)</p>
-            <p>R$ 0,00</p>
+          <div class="resumoBox">
+            <h1>Resumo do pedido</h1>
+            
+            <div class="resumoDesc">
+              <div class="resumoDescProd">
+                <p>Produtos: (0 itens)</p>
+              <p>R$ 0,00</p>
+            </div>
+            
+            <div class="resumoDescBrinde">
+              <p>Brinde: (0 itens)</p>
+              <span style="color: rgb(153, 64, 236); text-decoration: underline;"><p>Grátis</p></span>
+            </div>
+            
+            <div class="resumoDescFrete">
+              <p>Frete:</p>
+              <span style="color: rgb(153, 64, 236); text-decoration: underline;"><p>Grátis</p></span>
+            </div>
           </div>
           
-          <div class="resumoDescBrinde">
-            <p>Brinde: (0 itens)</p>
-            <span style="color: rgb(153, 64, 236); text-decoration: underline;"><p>Grátis</p></span>
+          <div class="resumoTotal">
+            <p>Total do pedido:</p>
+            <span style="font-weight: 400;"><p>R$ 0,00</p></span>
           </div>
           
-          <div class="resumoDescFrete">
-            <p>Frete:</p>
-            <span style="color: rgb(153, 64, 236); text-decoration: underline;"><p>Grátis</p></span>
+          <div class="resumoButton">
+            <button type="submit">FINALIZAR PEDIDO</button>
+          </div>
+          
+          <div class="resumoItens">
+            <label for="itensPedido">Itens do pedido (0)</label>
+            <select name="produtosEscolhidos" id="produtosEscolhidos">
+              <option value="produto1">Produto A</option>
+              <option value="produto1">Produto B</option>
+              <option value="produto1">Produto C</option>
+              <option value="produto1">Produto D</option>
+              <option value="produto1">Produto E</option>
+            </select>
           </div>
         </div>
-        
-        <div class="resumoTotal">
-          <p>Total do pedido:</p>
-          <span style="font-weight: 400;"><p>R$ 0,00</p></span>
-        </div>
-        
-        <div class="resumoButton">
-          <button type="submit">FINALIZAR PEDIDO</button>
-        </div>
-        
-        <div class="resumoItens">
-          <label for="itensPedido">Itens do pedido (0)</label>
-          <select name="" id=""></select>
-        </div>
-      </div>
+      </form>
     </nav>
-    </form>
   </div>
   
   <!------------------------------RODAPÉ---------------------------------->

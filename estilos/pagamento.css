@@ -1,18 +1,78 @@
+@media (min-width: 200px) and (max-width: 1150px) {
+  body {
+    margin-bottom: 500px;
+  }
+
+  body .pagMarca {
+    font-size: 20px;
+  }
+
+  body #container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  body #container .pagamento {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  body #container .resumo {
+    width: 100%;
+  }
+
+  body #container .pagamento h1{
+    font-size: 20px;
+  }
+
+  body #container .pagamento .imgButtonPix p{
+    font-size: 12px;
+  }
+
+  body #container .pagamento .comCartaoInput label,
+  body #container .pagamento .comPixInput label,
+  body #container .pagamento .comBolInput label {
+    font-size: 16px;
+  }
+
+  body #container .pagamento .comCartaoInput input[type=radio],
+  body #container .pagamento .comPixInput input[type=radio],
+  body #container .pagamento .comBolInput input[type=radio] {
+    width: 15px;
+    height: 15px;
+    border: 0;
+  }
+
+  body #container .pagamento .comCartao .comCartaoOp {
+    font-size: 14px;
+  }
+
+}
+
+/*-----------------Página-----------------------*/
 body {
   height: 100vh;
 }
 
-#container {
-  display: grid;
-  grid-template-columns: 1fr 400px;
-  justify-content: space-around;
-  padding: 50px;
+.pagMarca {
+  font-family: 'Cinzel', Arial;
+  font-size: 25px;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
+#container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-around;
+  padding: 50px;
+  padding-bottom: 250px;
+}
 
 .pagamento {
   margin-right: 30px;
-
 }
 
 .pagamento .boxPagamento {
@@ -135,7 +195,6 @@ input[type=radio] {
 }
 
 .formaPagamento .comCartaoOp .salvarCartao label{
-
   margin-top: 5px;
 }
 
@@ -235,5 +294,20 @@ input[type=checkbox] {
   box-shadow: 0 0 0, inset 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+.resumoBox .resumoItens {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-
+.resumoBox .resumoItens select{
+  padding: 5px;
+  width: 30%;
+  outline: none;
+  border-radius: 10px;
+}
