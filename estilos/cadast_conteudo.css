@@ -1,9 +1,38 @@
+@media (min-width: 200px) and (max-width: 1150px) {
+  body {
+    height: 3000px;
+  }
+
+  .conteudoCadastro {
+    height: 1350px;
+  }
+
+  .conteudoCadastro .boxForm {
+    width: 350px;
+    padding: 35px;
+    height: 1080px;
+  }
+
+  .boxForm form{
+    display: flex;
+  }
+
+  .conteudoCadastro .selectGen .selectGenMasc {
+    margin-left: 40px;
+  }
+
+  .conteudoCadastro .termosCond p{
+    font-size: 14px;
+  }
+
+}
+
 body {
-  height: 1200px;
+  height: 1500px;
 }
 
 .conteudoCadastro {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .conteudoCadastro .marca h1{
@@ -17,18 +46,18 @@ body {
 .boxForm {
   background-color: rgb(173, 216, 230);
   padding: 25px;
-  height: 900px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   width: 400px;
+  height: 1050px;
   margin: auto;
 }
 
 .boxForm form{
   display: grid;
   grid-template-rows: 1fr;
-  row-gap: 35px;
+  row-gap: 30px;
 }
 
 .boxForm .formInput button{
@@ -58,6 +87,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 1em;
   outline: none;
+  margin-top: 5px;
 }
 
 .boxForm .formInput input:focus{
@@ -66,6 +96,77 @@ body {
 }
 
 .boxForm .formInput label{
+  padding-left: 10px;
+  font-weight: 500;
+}
 
+.boxForm .formInput label:active {
+  color: rgba(153, 64, 236);
+}
 
+.boxForm .formInput .reqCadast {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+  color: rgb(75, 75, 75);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.boxForm .formInput .genero h1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.selectGen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.selectGen .selectGenFem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 0.5px;
+  margin-left: 25px;
+}
+
+.selectGen .selectGenFem input{
+  margin: 0;
+}
+
+.selectGen .selectGenFem label{
+  padding-left: 5px;
+}
+
+.selectGen .selectGenMasc {
+  display: flex;
+  margin-left: 110px;
+  letter-spacing: 0.5px;
+}
+
+.selectGen .selectGenMasc input{
+  margin: 0;
+}
+
+.selectGen .selectGenMasc label{
+  padding-left: 5px;
+}
+
+.formInput .termosCond {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  font-size: 15px;
 }

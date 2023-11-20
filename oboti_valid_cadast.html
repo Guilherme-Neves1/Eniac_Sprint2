@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="estilos/main.css">
   <link rel="stylesheet" href="estilos/rodape.css">
   <link rel="stylesheet" href="estilos/cabecalho.css">
-  <link rel="stylesheet" href="/estilos/cadast_conteudo.css">
+  <link rel="stylesheet" href="estilos/cadast_conteudo.css">
   <link rel="stylesheet" href="estilos/sacola_conteudo.css">
 
   <!--------------------- FONTES -------------------->
@@ -83,6 +83,34 @@
         <div>
           <label for="senha">Senha:</label>
           <input type="password" id="senha" required minlength="6">
+        </div>
+
+        <div class="reqCadast">
+          <p> &#10006; Mínimo um caractere especial</p>
+          <p> &#10006; Mínimo um número</p>
+          <p> &#10006; Mínimo uma letra maiúscula</p>
+          <p> &#10006; Mínimo uma letra minúscula</p>
+          <p> &#10006; Mínimo 6 caracteres</p>
+        </div>
+
+        <div class="genero">
+          <h1>Com qual gênero você se identifica?</h1>
+      
+          <div class="selectGen">
+            <div class="selectGenFem">
+              <input type="radio" required>
+              <label for="fem">Feminino</label>
+            </div>
+            
+            <div class="selectGenMasc">  
+              <input type="radio" required>
+              <label for="masc">Masculino</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="termosCond">
+          <p>Os dados aqui coletados serão tratados nos termos de nossa <span style="color: rgb(153, 64, 236); border-bottom: 1px solid rgba(153, 64, 236); cursor: pointer;">Política de Privacidade.</span></p>
         </div>
 
         <button>Criar Conta</button>
