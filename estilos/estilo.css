@@ -1,0 +1,647 @@
+/*------------- "*" -> Configura todos os textos da página --------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato';
+  border: none;
+} 
+
+/*------------- TAMANHO DA PÁG NO DISPOSITIVO DE 1200PX ------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+body {
+  width: 100%;
+  }
+}
+
+/*----------------------- BARRA DE ROLAGEM ------------------------------------------------------------*/
+html::-webkit-scrollbar{
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: rgb(95, 20, 237,0.7);
+  border-radius: 1rem;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+#interface {
+  background-color: rgba(0,0,0,.2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+/*-------------------------- CABEÇALHO ----------------------------------------------------------------*/
+header#cabecalho {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding-top: 1.5rem;
+  align-items: center;
+}
+
+.logo #oLogo {
+  position: absolute;
+  padding: 0px;
+  margin: -30px 0px 30px 30px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid rgb(95, 20, 237);
+  border-radius: 360px;
+  transition: 0.5s;
+}
+
+.logo #oLogo:hover {
+  box-shadow: 0px 4px 10px rgb(95, 20, 237);
+}
+
+.logo {
+  cursor: pointer;
+}
+
+div.background-cima {
+  background-color: rgb(95, 20, 237);
+  position: relative;
+  height: 75px;
+}
+
+ul {
+  list-style: none; /* Remove as bolinhas da lista */
+  display: flex; /* Deixa os itens em linha horizontal */
+  gap: 5rem; /* Separa os itens */
+}
+
+ul li{
+  list-style: none; /* Remove a estilização dos links */
+}
+
+ul li a{
+  text-decoration: none; /* Remove a estilização de cada palavra do Menu */
+  color: #fff;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  font-weight: 600; /* Quanto de negrito vai ter a palavra */
+  text-transform: uppercase; /* As palavras ficam em letra maiúscula */
+} /* Estiliza todos os textos que estiverem dentro da tag <a></a> */
+
+ul li a:hover {
+  text-transform: uppercase;
+  color: rgb(33, 200, 206);
+  border-bottom: solid 1px;
+} /* Efeito nas palavras do Menu */
+
+hr.cabeca{
+  padding-top: 10px;
+  border-bottom: solid 2px;
+  color: rgb(33, 200, 206);
+  margin-top: 0px;
+} /* Linha horizontal que delimita a área do Menu*/
+
+hr.propa{
+  padding-top: 0px;
+  border-bottom: solid 2px;
+  color: rgb(33, 200, 206);
+  margin-top: 323px;
+} /* Linha horizontal que delimita a área da propaganda*/
+
+.container-icon {
+  display: flex;
+  margin-right: 5rem;
+  gap: 1rem;
+} /* DIV que abrange os icones "Pesquisa" e "Carrinho de Compras" */
+
+/* Configuração da barra de pesquisa */
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+} /* Mudar a cor da palavra "Pesquisar" dentro da barra */
+
+.search-box {
+  position: relative;
+  left: 0%;
+  background: rgb(33, 200, 206);
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} /* Barra de Pesquisa + icone */
+
+.search-txt { 
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+  line-height: 40px;
+  width: 0;
+  transition: .5s;
+  font-family: 'Lato';
+} /* Estilização do texto da barra de pesquisa */
+
+.search-botton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} /* Estilização ao redor do texto da barra de pesquisa */
+
+.search-box:hover > .search-txt {
+  width: 200px;
+  padding: 0 6px; /* O primeiro valor é vertical e o segundo horizontal */
+} /* Quando passar o mouse em cima do search-box, o search-txt será alterado para o estilo definido aqui */
+
+.container-icon span {
+  gap: 3rem;
+} /* Espaçamento entre os icones "Pesquisa" e "Carrinho de Compra" */
+
+.icone ion-icon {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: .5s;
+} /* Estilizar os icones(mudar cor, tamanho...)*/
+
+#cIcone ion-icon {
+  padding-top: 5px;
+}
+
+#cIcone ion-icon:hover {
+  color: rgb(33, 200, 206);
+} /* Estilizar os icones(mudar cor, tamanho...)*/
+
+#pIcone ion-icon:hover {
+  color: rgb(95, 20, 237);
+}
+
+/*--------------------------NOME + BOTÃO NA CAPA ---------------------------------------------------*/
+
+.bg-propaganda {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,.2);
+  width: 100%;
+  height: 322px;
+  color: white;
+}
+
+.bg-propaganda h1 {
+  margin-left: 550px;
+  padding-top: 5px;
+  color: black;
+  position: absolute;
+}
+
+.container-title {
+  position: absolute;
+  margin: -205px 0px 0px 90px;
+  padding: 0;
+}
+
+.container-title h1 {
+color: rgb(95, 20, 237);
+font-size: 4.8rem;
+text-shadow: 2px 2px 2px rgb(95, 20, 237);
+cursor: pointer;
+transition: 0.5s;
+}
+
+.title h1:hover {
+  letter-spacing: 0px;
+  text-shadow: 2px 2px 2px rgb(33, 200, 206);
+}  
+
+.container-title p {
+  color: #fff;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 100;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container-title p:hover {
+  letter-spacing: 0.2px;
+}
+
+.container-title button {
+  margin-top: 0.8rem;
+  background-color: rgb(33, 200, 206);
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.container-title button:hover {
+  letter-spacing: 0px;
+  color: rgb(95, 20, 237);
+  box-shadow: 2px 2px 5px rgb(95, 20, 237);
+}  
+
+#container-linha1 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*--------------------------- "MAIS VENDIDOS" ----------------------------------------------------*/
+.tPerfumes {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#perfumes {
+  /* BACKGROUND */
+  position: relative;
+  background-color: rgb(95, 20, 237);
+  border-radius: 10px;
+  width: 430px;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-top: 5px;
+
+  /* TEXTO */
+  font-size: 35px;
+  font-weight: 200;
+  font-family: sans-serif;
+  color: rgba(255, 255, 255,1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#perfumes:hover {
+  width: 435px;
+  font-size: 35px;
+  letter-spacing: 0.1px;
+  box-shadow: 0px 0px 10px rgb(95, 20, 237);
+}
+
+#perfumesdois {
+  /* BACKGROUND */
+  position: relative;
+  background-color: rgb(95, 20, 237);
+  border-radius: 10px;
+  width: 480px;
+  height: 50px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-top: 5px;
+
+  /* TEXTO */
+  font-size: 35px;
+  font-weight: 100;
+  font-family: sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#perfumesdois:hover {
+  width: 485px;
+  font-size: 35px;
+  letter-spacing: 0.1px;
+  box-shadow: 0px 0px 10px rgb(95, 20, 237);
+}
+
+/*------------------------ DIV DE CADA PERFUME -------------------------------------------------*/
+figure.foto-legenda {
+  display: block;
+  text-align: justify;
+  width: 250px;
+  border: 0.1px solid rgb(33, 200, 206);
+  box-shadow: 0px 2px 10px black;
+  cursor: pointer;
+  transition: .5s;
+}
+
+figure.foto-legenda:hover {
+  box-shadow: 0px 0px 10px rgb(33, 200, 206);
+} /* Efeito nos cards dos produtos */
+
+.compre {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  background-color: rgba(95, 20, 237,1);
+  width: 248px;
+  justify-content: center;
+  align-items: center;
+  bottom: -50px;
+  padding-bottom: 20px;
+  margin-right: 1px;
+  transition: .5s;
+}
+
+.compre h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.compre h1:hover {
+  color: rgb(33, 200, 206);
+  font-size: 35px;
+}
+
+figure.foto-legenda:hover > .compre {
+  opacity: 1;
+  bottom: 0px;
+  box-shadow: 0px 0px 10px rgba(95, 20, 237,1);
+} /* Efeito no COMPRE JÁ! */
+
+figcaption.legenda-perfume {
+  display: block;
+  box-sizing: content-box;
+  text-align: justify;
+}
+
+.legenda-perfume h3 {
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Titillium Web', serif;
+  text-transform: uppercase;
+}
+
+.legenda-perfume h4 {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 0.1px solid rgba(0,0,0,.2);
+}
+
+.legenda-perfume p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0px;
+  padding-bottom: 5px;
+
+}
+
+div#imagens-perfume {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img.perfumes-p1 {
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.1px solid rgba(0,0,0,.2);
+}
+
+/*----------------------------- SETA PARA A DIREITA --------------------------------------------------*/
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 200px;
+  right: 10px;
+}
+
+.left-next img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.left-next img:hover {
+ background-color: rgba(95, 20, 237,0.8);
+ box-shadow: 0px 0px 20px rgb(95, 20, 237);
+}
+
+/*----------------------------- RODAPÉ ------------------------------------------------------------ */
+div.rodape {
+  border-top: 2px solid rgb(95, 20, 237);
+  width: 100%;
+  height: 130px;
+  background-color: rgba(33, 200, 206,1);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+header#rItens {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+div.pagamento {
+  margin: 0px 0px 0px 0px;
+  padding-top: 20px;
+  width: 300px;
+  height: 130px;
+}
+
+div.pagamento h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: black
+}
+
+div.pagamento img{
+  margin-top: 15px;
+  width: 100%;
+  cursor: pointer;
+}
+
+div.seguranca {
+  margin: 0;
+  padding-top: 20px;
+  width: 300px;
+  height: 130px;
+}
+
+div.seguranca h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: black;
+}
+
+div.seguranca img{
+  margin-top: 15px;
+  width: 100%;
+  cursor: pointer;
+}
+
+div.loja {
+  margin: 0;
+  padding-top: 20px;
+  width: 300px;
+  height: 130px;
+}
+
+div.loja h1{
+  display: flex;
+  text-align: justify;
+  font-size: 23px;
+  color: black;
+}
+
+div.redes {
+  margin: 0;
+  padding-top: 20px;
+  width: 300px;
+  height: 130px;
+}
+
+div.redes h1{
+  display: flex;
+  text-align: justify;
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: black
+}
+
+.icon-redes {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.facebook img{
+ width: 32px;
+ height: 32px;
+}
+
+span.facebook {
+  height: 32px;
+  width: 32px;
+  transition: 0.5s;
+}
+
+span.facebook:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 360px;
+}
+
+span.insta {
+  height: 32px;
+  width: 32px;
+  transition: 0.5s;
+}
+
+span.insta:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 360px;
+}
+
+span.twitter {
+  height: 32px;
+  width: 32px;
+  transition: 0.5s;
+}
+
+span.twitter:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 360px;
+}
+
+span.youtube {
+  height: 32px;
+  width: 32px;
+  transition: 0.5s;
+}
+
+span.youtube:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 360px;
+}
+
+span.blog {
+  height: 32px;
+  width: 32px;
+  transition: 0.5s;
+}
+
+span.blog:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 360px;
+  width: 70px;
+}
+
+/*-------------------------- CHATBOT --------------------------------------------------------------*/
+.chatbot {
+  cursor: pointer;
+  position: fixed;
+  bottom: 1px;
+  right: 1px;
+  z-index: 9999;
+
+}
+
+.chatbot img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.chatbot img:hover {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(95, 20, 237,0.8);
+  box-shadow: 0px 0px 5px rgb(95, 20, 237);
+}
+
+.foto-legenda .compre .compreh1 a{
+  text-decoration: none;
+  color: white;
+}
+
+.foto-legenda .compre .compreh1 a:hover{
+  color: rgb(33, 200, 206)
+}
+
+.foto-legenda .compre .compreh1 a:visited{
+  text-decoration: none;
+}
+
+.foto-legenda .compre .compreh1 a:active{
+  text-decoration: none;
+}

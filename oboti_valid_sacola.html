@@ -41,6 +41,7 @@
   </div>
 
 <!-----------------------CONTEÚDO---------------------->
+<form class="endereco" name="endereco">
   <div class="sacola">
     <div class="sacolaFrete">
       <div class="sacolaFreteProdutos">
@@ -62,7 +63,7 @@
       <div class="formaEntrega">
         <div class="formaEntregaNormal">
           <div class="entregaNormalInput">
-            <input type="radio">
+            <input type="radio" required>
             <label for="normal">Normal (até 2 dias úteis)</label>
           </div>
           <div class="entregaNormalPreco">
@@ -72,7 +73,7 @@
 
         <div class="formaEntregaLoja">
           <div class="entregaLojaInput">
-            <input type="radio">
+            <input type="radio" required="required">
             <label for="normal">Retirar na loja</label>
             <p>Ver lojas disponíveis</p>
           </div>
@@ -89,12 +90,12 @@
 
         <h1>Preço</h1>
       </div>
-
     </div>
 
     <div class="finalizarCompra">
+
       <button class="finalizarCompraButton">
-        <a href="https://guilherme-neves1.github.io/Eniac_Sprint2/oboti_valid_login.html">FINALIZAR COMPRA</a>
+        <a href="oboti_valid_login.html" style="text-decoration: none; color: white;">FINALIZAR COMPRA</a>
       </button>
 
       <div class="finalizarProdPrc">
@@ -126,10 +127,16 @@
         </div>
       </div>
 
-      <button class="finalizarCompraButton" style="margin-top: 15px;">FINALIZAR COMPRA</button>
+        <button class="finalizarCompraButtonDois">
+          <a href="oboti_valid_login.html" style="text-decoration: none; color: white;">
+            FINALIZAR COMPRA
+          </a>
+        </button>
+
 
     </div>
   </div>
+</form>
 
 <!----------------------- RODAPÉ ------------------------>
   <div id="rodape">

@@ -252,6 +252,31 @@ font-size: 16px;
   background-color: rgba(153, 64, 236, 0.9);
 }
 
+.finalizarCompra .finalizarCompraButtonDois {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(153, 64, 236);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  transition: 0.15s;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.finalizarCompra .finalizarCompraButtonDois:active {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), inset 2px 2px 3px rgba(0, 0, 0, 0.15);
+  transform: translate(2px, 2px);
+}
+
+.finalizarCompra .finalizarCompraButtonDois:hover {
+  background-color: rgba(153, 64, 236, 0.9);
+}
+
 .finalizarCompra .finalizarProdPrc {
   display: flex;
   flex-direction: row;

@@ -71,6 +71,16 @@
   display: block;
 }
 
+.boxLoginEmail .txtLoginEmail a{
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  transition: 0.15s;
+}
+
+.boxLoginEmail .txtLoginEmail a:hover{
+  color: rgb(153, 64, 236)
+}
+
 .inputBox {
   position: relative;
   width: 100%;
