@@ -1,15 +1,19 @@
 .container {
+  vertical-align: top;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.pagamento {
+  vertical-align: top;
+}
+
+.resumo {
+  vertical-align: top;
 }
 
 .pagamento .boxPagamento {
-  margin: 100px auto;
-  width: 600px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-items: center;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -173,9 +177,6 @@ input[type=checkbox] {
 
 /*--------------------RESUMO------------------------------*/
 .resumoBox {
-  flex: 1;
-  margin: 100px auto;
-  width: 600px;
   padding: 45px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
