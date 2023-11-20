@@ -24,6 +24,7 @@
       <br>
 
       <button type="submit">Entrar</button>
+      <br>
     </form>
 
 <!------------------------------------ FORMULÁRIO 2 ------------------------------------>
@@ -63,7 +64,7 @@
       <br>
       
       <label for="bairro">Bairro:</label>
-      <input type="text" id="bairroEnde" placeholder="Ex.: Jardim Cumbica">
+      <input type="text" id="bairroEnde" placeholder="Ex.: Jd. Cumbica">
       <br>
       
       <label for="cidadeEstado">Cidade/Estado:</label>
@@ -86,7 +87,7 @@
       <input type="text" id="notaFiscal" placeholder="CPF ou CNPJ">
       <br>
 
-      <button type="submit">Salvar e Continuar a Compra</button>
+      <button type="submit">Salvar e Continuar</button>
     </form>
 
 <!------------------------------------ FORMULÁRIO 3 ------------------------------------>
@@ -94,15 +95,14 @@
     <h2>Pagamento</h2>
 
     <form name="pagamento" method="post" action="pagamento.jsp">
-      <label for="entregaFrete">Escolha uma forma de entrega</label> <br>
+      <label for="entregaFrete">Escolha a forma de entrega:</label> <br>
 
       <input type="radio" name="frete" id="emCasa" value="emCasa">
-      <label for="emCasa">Normal</label>
+      <label for="emCasa">Enviar no meu endereço</label>
 
       <input type="radio" name="frete" id="naLoja" value="naLoja">
       <label for="naLoja">Retirar na loja</label>
 
     </form>
-
   </body>
 </html>
