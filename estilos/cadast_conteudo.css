@@ -1,0 +1,71 @@
+body {
+  height: 1200px;
+}
+
+.conteudoCadastro {
+  margin-top: 200px;
+}
+
+.conteudoCadastro .marca h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Cinzel', Arial;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.boxForm {
+  background-color: rgb(173, 216, 230);
+  padding: 25px;
+  height: 900px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  width: 400px;
+  margin: auto;
+}
+
+.boxForm form{
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 35px;
+}
+
+.boxForm .formInput button{
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1em;
+  outline: none;
+  background-color: rgba(153, 64, 236);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.boxForm .formInput button:active{
+  transform: translate(0, 1px);
+  box-shadow: 0 0 0, inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.boxForm .formInput input{
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 1em;
+  outline: none;
+}
+
+.boxForm .formInput input:focus{
+  border: 1px solid rgba(153, 64, 236);
+  box-shadow: inset 0px 0px 5px 1px rgba(153, 64, 236, 0.2);
+}
+
+.boxForm .formInput label{
+
+
+}
