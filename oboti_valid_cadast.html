@@ -34,22 +34,22 @@
       <form class="formInput" name="formCadastro" method="post" action="cadastro_usuarios.jsp">
         <div>
           <label for="email">Email:</label>
-          <input type="email" name="email" id="email" required>
+          <input type="email" name="email" maxlength="60" id="email" required>
         </div>
 
         <div>
           <label for="nome">Nome:</label>
-          <input type="text" name="nome" id="nome" required>
+          <input type="text" name="nome" maxlength="30" id="nome" required>
         </div>
 
         <div>
           <label for="sobrenome">Sobrenome:</label>
-          <input type="text" name="sobrenome" id="sobrenome" required>
+          <input type="text" name="sobrenome" maxlength="30" id="sobrenome" required>
         </div>
 
         <div>
           <label for="cpf">CPF:</label>
-          <input type="number" name="cpf" id="cpf" required maxlength="11">
+          <input type="tel" name="cpf"  id="cpf" maxlength="11" required max="5">
         </div>
 
         <div>
@@ -59,7 +59,7 @@
 
         <div>
           <label for="celular">Celular:</label>
-          <input type="number" name="celular" id="celular" required maxlength="11">
+          <input type="tel" name="celular" id="celular" required maxlength="11">
         </div>
 
         <div>
