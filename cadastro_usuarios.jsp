@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSP - Login</title>
+  <link rel="stylesheet" href="estilos/jsp.css">
+  <link rel="stylesheet" href="estilos/main.css">
+  <link rel="stylesheet" href="estilos/rodape.css">
+  <link rel="stylesheet" href="estilos/cabecalho.css">
+  <link rel="stylesheet" href="estilos/cadast_conteudo.css">
+  <link rel="stylesheet" href="estilos/sacola_conteudo.css">
+  <link rel="stylesheet" href="estilos/pagamento.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Noto+Sans+Mandaic&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="header">
+
+    <div class="headerLeft">
+      <h1>
+        oBotic&aacute;rio
+      </h1>
+    </div>
+
+    <div class="headerMiddle">
+      <input type="text" required placeholder="Aproveite as melhores ofertas">
+      <img src="imagens/icons/icon-search.png" alt="search">
+    </div>
+
+    <div class="headerRight">
+      <img src="imagens/icons/profile-icon.png" alt="profile">
+      <img src="imagens/icons/icon-heart.png" alt="heart">
+      <img src="imagens/icons/icon-market-car.png" alt="market-car">
+    </div>
+  </div>
+
+  <div id="rodape">
+    <div class="pagSeg">
+      <div id="meiosPagamento">
+        <div class="txtPag">
+          <p class="rodapeTexto">Meios de Pagamento</p>
+        </div>
+
+        <div class="imgPag">
+          <img class="bandeira" src="imagens/meios_pagamento/flag-visa.svg" alt="visa">
+          <img class="bandeira" src="imagens/meios_pagamento/flag-master.svg" alt="master">
+          <img class="bandeira" src="imagens/meios_pagamento/flag-amex.svg" alt="amex">
+          <img class="bandeira" src="imagens/meios_pagamento/flag-elo.svg" alt="elo">
+          <img class="bandeira" src="imagens/meios_pagamento/flag-diners.svg" alt="diners">
+          <img class="bandeira" src="imagens/meios_pagamento/flag-hipercard.svg" alt="hiper">
+          <img class="bandeira" src="imagens/meios_pagamento/flag-boleto.svg" alt="boleto">
+          <img class="pix" src="imagens/meios_pagamento/flag-pix.svg" alt="pix">
+        </div>
+      </div>
+
+      <div id="segurancaPagamento">
+        <div class="txtSeg">
+          <p class="rodapeTexto">Seguran&ccedil;a</p>
+        </div>
+
+        <div class="imgSeg">
+          <img class="segurancaBandeira" src="imagens/seguranca/security-100.svg" alt="secCem">
+          <img class="segurancaBandeira" src="imagens/seguranca/security-google-icon.svg" alt="secGoogle">
+          <img class="segurancaBandeira" src="imagens/seguranca/security-geotrust.svg" alt="secGeotrust">
+        </div>
+      </div>
+    </div>
+
+    <div class="obotiCopy">
+      <p class="rodapeTexto"> &#169; 2007-2023 O Botic&aacute;rio</p>
+    </div>
+  </div>
+
+  <%@page language="java" import="java.sql.*" %>
+  <% 
+  /* Variáveis com informações difitadas pelo usuário, com print na tela JSP */
+    String email = request.getParameter("email");
+    String nome = request.getParameter("nome");
+    String sobrenome = request.getParameter("sobrenome");
+    String cpf = request.getParameter("cpf");
+    String data_nasc = request.getParameter("data_nasc");
+    String celular = request.getParameter("celular");
+    String senha = request.getParameter("senha");
+    String genMascFem = request.getParameter("genMascFem");
+
+    /*
+    out.println(email+"<br>"+"<br>");
+    out.println(nome+"<br>"+"<br>");
+    out.println(sobrenome+"<br>"+"<br>");
+    out.println(cpf+"<br>"+"<br>");
+    out.println(data_nasc+"<br>"+"<br>");
+    out.println(celular+"<br>"+"<br>");
+    out.println(senha+"<br>"+"<br>");
+    out.println(genMascFem+"<br>"+"<br>");
+    */
+
+   // Variáveis para o Banco de Dados
+   // String nomeBanco
+   // String enderecoBanco
+   // String usuarioBanco
+   // String senhaUsuarioBanco
+
+  String nomeBanco = "projeto_web";
+  String enderecoBanco = "jdbc:mysql://localhost:3306/"+nomeBanco;
+  String usuarioBanco = "root";
+  String senhaUsuarioBanco = "";
+
+  // Variável para o Driver => padrão de comunicação entre JSP e o Banco de Dados
+  // Baixar o driver mysql-connector-java e colocar no caminho: C:\xampp\tomcat\lib 
+  // Abrir o arquivo connector com o WinRar e ver o caminho do driver
+  // "com.mysql.jdbc.Driver"
+  // Adiconar a variável String driver = "com.mysql.jdbc.Driver"
+
+  String driver = "com.mysql.jdbc.Driver";
+
+  // Carregar o driver na memória
+  // Usar o comando Class.forName(driver);
+  Class.forName(driver);
+
+  // Criar a variável para conectar com o Banco de Dados
+  // Ela veio junto com o import
+  // Connection nomeVariavel;
+  Connection conexao;
+
+  // Abrir a conexão com o Banco de Dados
+  conexao = DriverManager.getConnection(enderecoBanco, usuarioBanco, senhaUsuarioBanco);
+
+  // Criar a variável sql como comando INSERT
+  String sql = "INSERT INTO cadastros (email, nome, sobrenome, cpf, data_nasc, celular, senha, genMascFem) values (?, ?, ?, ?, ?, ?, ?, ?)";
+
+  // Preparar o INSERT no MySQL, com um comando para substituir as interrogações
+	// stm é a variável7
+  // os números são as interregações em sequência
+  PreparedStatement stm = conexao.prepareStatement(sql);
+
+  stm.setString(1, email);
+  stm.setString(2, nome);
+  stm.setString(3, sobrenome);
+  stm.setString(4, cpf);
+  stm.setString(5, data_nasc);
+  stm.setString(6, celular);
+  stm.setString(7, senha);
+  stm.setString(8, genMascFem);
+
+  stm.execute();
+  stm.close();
+
+  out.print("<h1 class='finCad'>Seu cadastro foi realizado!</h1>");
+  out.print("<br><br>");
+  out.print("<a href='https://guilherme-neves1.github.io/Eniac_Sprint2/oboti_valid_pag.html?email=54654654&senha=654546554654'> <button> Realizar o pagamento </button> </a>");
+
+  %>
+</body>
+</html>

@@ -59,7 +59,7 @@ body {
   row-gap: 30px;
 }
 
-.boxForm .formInput button{
+.boxForm .formInput .buttonCc{
   padding: 10px;
   width: 100%;
   border-radius: 5px;
@@ -74,7 +74,7 @@ body {
   cursor: pointer;
 }
 
-.boxForm .formInput button:active{
+.boxForm .formInput .buttonCc:active{
   transform: translate(0, 1px);
   box-shadow: 0 0 0, inset 2px 2px 2px rgba(0, 0, 0, 0.2);
 }

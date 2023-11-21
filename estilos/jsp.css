@@ -1,0 +1,36 @@
+
+.header .headerLeft h1{
+  font-family: 'Cinzel', Arial;
+}
+
+.finCad {
+  margin-top: 50px;
+  font-family: Arial;
+  font-size: 50px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center; 
+  text-decoration: none;
+}
+
+button {
+
+  padding: 10px;
+  border: 1px solid black;
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
