@@ -8,26 +8,41 @@
   padding: 0 150px;
 }
 
+.header .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+.header .logo img {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 360px;
+  width: 80px;
+  cursor: pointer;
+}
+
 .header .headerLeft {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
   font-family: 'Cinzel', Arial;
   width: 350px;
 }
 
 .header .headerLeft h1 {
-  color: black;
   cursor: pointer;
   transition: 0.15s;
+  color: rgb(0, 0, 0);
 }
 
-.header .headerLeft h1:hover {
+.header .headerLeft:hover {
   letter-spacing: 0.5px;
 }
 
 .header .headerMiddle {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,6 +87,7 @@
 }
 
 .header .headerRight {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,6 +107,34 @@
 
 .header .headerRight img:active{
   width: 40px;
+}
+
+.headerBar {
+  background-color: lightblue;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  transition: 0.15s;
+  height: 40px;
+  align-items: center;
+}
+
+.headerBar h1{
+  font-size: 17px;
+  color: black;
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition: 0.15s;
+}
+
+.headerBar h1:hover{
+  color: rgb(169, 99, 235);
+  border-bottom: 1px solid rgb(169, 99, 235);
+}
+
+.headerBar h1:active{
+  padding-bottom: 1px;
 }
 
 .menu{
