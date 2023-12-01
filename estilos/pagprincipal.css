@@ -1,0 +1,67 @@
+.conteudoContainer {
+  margin-top: 50px;
+}
+
+.linhaConteudo .linhaConteudoTxt {
+  font-family: 'Cinzel', Arial;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.linhaConteudo .linhaProdutos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto{
+  width: 250px;
+  border: 1px solid rgba(77, 0, 128, 0.25);
+  border-radius: 2.5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+  cursor: pointer;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto:hover{
+  width: 250px;
+  border: 1px solid rgba(77, 0, 128, 0.25);
+  border-radius: 2.5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+  cursor: pointer;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto .cadaProdutoTxt{
+  padding: 5px;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto .prodIMG img{
+  border-top-right-radius: 2.5px;
+  border-top-left-radius: 2.5px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto .prodNAME h1{
+  font-size: 15px;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto .prodNAME p{
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.linhaConteudo .linhaProdutos .cadaProdutoTxt .prodPRICE{
+  font-weight: 700;
+  margin-top: 10px;
+  padding-left: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 5px;
+}
+
+.linhaConteudo .linhaProdutos .cadaProdutoTxt .prodDESC{
+  margin-top: 5px;
+  padding-left: 5px;
+  font-size: 14px;
+}
