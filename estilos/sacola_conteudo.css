@@ -18,8 +18,16 @@
     padding-top: 15px;
   }
 
+  .header .logo {
+    display: none;
+  }
+
   .header .headerRight img{
     margin: 0 20px 0 20px;
+  }
+
+  .headerBar {
+    display: none;
   }
 
   .sacola {
