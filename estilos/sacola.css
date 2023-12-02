@@ -3,17 +3,19 @@
   .endereco .sacola {
     grid-template-columns: 1fr;
     padding: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   body .endereco .sacola .sacolaFrete{
-
+    margin: 0;
   }
 
   body .sacola .finalizarCompra {
     margin-top: 50px;
-
+    margin-left: 0;
+    margin-right: 0;
   }
-
 }
 
 /*----------------- SACOLA ----------------*/
