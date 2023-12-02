@@ -19,11 +19,6 @@
   display: flex;
 }
 
-#rodape {
-  bottom: 0;
-  position: fixed;
-}
-
 /*---------------------- CAIXA LOGIN ----------------------*/
 .txtConteudo {
   padding-top: 60px;
