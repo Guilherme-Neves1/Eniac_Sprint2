@@ -1,8 +1,4 @@
 @media (min-width: 200px) and (max-width: 1150px) {
-  body {
-    height: 3000px;
-  }
-
   .conteudoCadastro {
     height: 1350px;
   }
@@ -24,10 +20,6 @@
   .conteudoCadastro .termosCond p{
     font-size: 14px;
   }
-}
-
-body {
-  height: 1500px;
 }
 
 .conteudoCadastro {

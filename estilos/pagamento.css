@@ -1,8 +1,4 @@
 @media (min-width: 200px) and (max-width: 1150px) {
-  body {
-    margin-bottom: 550px;
-  }
-
   body .pagMarca {
     font-size: 20px;
   }
@@ -50,9 +46,6 @@
 }
 
 /*-----------------Página-----------------------*/
-body {
-  height: 100vh;
-}
 
 .pagMarca {
   font-family: 'Cinzel', Arial;

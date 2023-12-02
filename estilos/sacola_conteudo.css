@@ -1,8 +1,4 @@
 @media (min-width: 200px) and (max-width: 1150px) {
-  body {
-    height: 1450px;
-  }
-
   .header .headerMiddle{
     display: none;
   }
