@@ -1,20 +1,21 @@
 @media (min-width: 200px) and (max-width: 1150px) {
-
   body .endereco .sacola {
     grid-template-columns: 1fr;
     padding: 0;
-    margin-left: 0px;
-    margin-right: 0;
   }
 
-  body .endereco .sacola .sacolaFrete{
-    margin: 0;
+  body .sacola .sacolaFrete {
+    margin-top: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px black;
+
   }
 
   body .sacola .finalizarCompra {
     margin-top: 50px;
-    margin-left: 0;
-    margin-right: 0;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px black;
+
   }
 }
 
