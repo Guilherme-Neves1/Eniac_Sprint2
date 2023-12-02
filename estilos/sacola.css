@@ -1,17 +1,19 @@
 @media (min-width: 200px) and (max-width: 1150px) {
+
   .endereco .sacola {
     grid-template-columns: 1fr;
-    margin-left: 10px;
-    margin-right: 10px;
     padding: 0;
   }
-  
-  body .sacola .finalizarCompra {
-    margin-top: 50px;
+
+  body .endereco .sacola .sacolaFrete{
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
-  .finalizarCompra .temCupom .cupomInput button{
-    margin-top: 10px;
+  body .sacola .finalizarCompra {
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
 }
