@@ -1,12 +1,8 @@
 @media (min-width: 200px) and (max-width: 1150px) {
-  .conteudoCadastro {
-    height: 1350px;
-  }
 
   .conteudoCadastro .boxForm {
     width: 350px;
     padding: 35px;
-    height: 1080px;
   }
 
   .boxForm form{
@@ -41,7 +37,6 @@
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
   width: 400px;
-  height: 1050px;
   margin: auto;
 }
 
