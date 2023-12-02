@@ -1,3 +1,25 @@
+@media (min-width:200px) and (max-width:1150px) {
+  .conteudoContainer .linhaConteudo .linhaProdutos {
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    padding: 0 100px;
+  }
+
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto {
+    margin-top: 50px;
+    width: 250px;
+  }
+
+  .conteudoContainer .linhaConteudo .arrowRight{
+    display: none;
+  }
+
+}
+
+body {
+  height: 100vh;
+}
+
 .conteudoContainer {
   margin-top: 50px;
 }
@@ -13,10 +35,14 @@
 .linhaConteudo .linhaProdutos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0px;
+  justify-content: space-between;
+  align-items: center;
   justify-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto{
+.linhaConteudo .linhaProdutos .cadaProduto {
   width: 250px;
   border: 1px solid rgba(77, 0, 128, 0.25);
   border-radius: 2.5px;
@@ -25,7 +51,7 @@
   transition: 0.15s;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto:hover{
+.linhaConteudo .linhaProdutos .cadaProduto:hover {
   width: 250px;
   border: 1px solid rgba(77, 0, 128, 0.25);
   border-radius: 2.5px;
@@ -33,22 +59,22 @@
   cursor: pointer;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .cadaProdutoTxt{
+.linhaConteudo .linhaProdutos .cadaProduto .cadaProdutoTxt {
   padding: 5px;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .prodIMG img{
+.linhaConteudo .linhaProdutos .cadaProduto .prodIMG img {
   border-top-right-radius: 2.5px;
   border-top-left-radius: 2.5px;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .prodNAME h1{
+.linhaConteudo .linhaProdutos .cadaProduto .prodNAME h1 {
   font-size: 15px;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .prodNAME p{
+.linhaConteudo .linhaProdutos .cadaProduto .prodNAME p {
   font-size: 13px;
   padding-left: 5px;
 }
@@ -81,6 +107,16 @@
   opacity: 1;
 }
 
+.cadaProduto .hoverProduto p{
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(169, 99, 235);
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto .hoverProduto p:hover{
+  text-decoration: underline;
+}
 
 .linhaConteudo .linhaProdutos .cadaProduto .buttonCompre button{
   width: 100%;
@@ -98,29 +134,39 @@
   opacity: 0.8;
 }
 
+.linhaConteudo .linhaProdutos .cadaProduto .buttonCompre button:active{
+  transform: translate(0, 2px);
+  opacity: 1;
+}
+
 .linhaConteudo .arrowRight{
   opacity: 0;
   position: relative;
-  padding-right: 110px;
   display: flex;
   align-items: center;
   transition: 0.15s;
-
 }
 
 .linhaConteudo .arrowRight img{
-  width: 70px;
-  height: 70px;
-  box-shadow: 0 0 15px 2.5px rgba(0, 173, 173, 0.5);
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 0 10px 1px rgba(0, 173, 173, 0.5);
   border-radius: 360px;
   cursor: pointer;
-  transition: 0.30s;
+  transition: 0.15s;
 }
 
 .linhaConteudo .arrowRight img:hover{
   background-color: rgb(156, 240, 240);
   box-shadow: inset 0 0 15px 10px rgba(0, 173, 173, 0.5);
   border-radius: 360px;
+}
+
+.linhaConteudo .arrowRight img:active{
+  width: 44px;
+  height: 44px;
+  background-color: rgba(156, 240, 240, 0.2);
+  box-shadow: inset 0 0 0px 0px rgba(0, 173, 173, 0.2);
 }
 
 .linhaProdutos:hover .arrowRight {
