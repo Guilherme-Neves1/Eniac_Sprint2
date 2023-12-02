@@ -1,71 +1,24 @@
 @media (min-width: 200px) and (max-width: 1150px) {
-  body {
-    height: 1500px;
-  }
-
-  .header .headerMiddle{
-    display: none;
-  }
-
-  .header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: center;
-    height: 115px;
-    padding-top: 15px;
-  }
-
-  .header .logo {
-    display: none;
-  }
-
-  .header .headerRight img{
-    margin: 0 20px 0 20px;
-  }
-
-  .headerBar {
-    display: none;
-  }
-
-  .sacola {
-    position: absolute;
-    display: grid;
+  .endereco .sacola {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    width: 100%;
-  }
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+
+}
 
   .sacola .sacolaFrete {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 250px;
-    width: 95%;
-    height: 500px;
+
   }
 
-  .sacola .finalizarCompra {
-    position: absolute;
-    margin-top: 1350px;
-    width: 95%;
+  body .sacola .finalizarCompra {
+    margin-top: 50px;
   }
 
   .finalizarCompra .temCupom .cupomInput button{
     margin-top: 10px;
   }
 
-  #rodape {
-    margin-top: 100px;
-    position: fixed;
-
-  }
 }
 
 /*----------------- SACOLA ----------------*/

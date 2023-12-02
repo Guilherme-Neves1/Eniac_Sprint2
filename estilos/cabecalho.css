@@ -1,3 +1,32 @@
+@media (min-width:200px) and (max-width:1150px) {
+  body .header .headerMiddle{
+    display: none;
+  }
+
+  body .header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    height: 115px;
+    padding-top: 15px;
+  }
+
+  body .header .logo {
+    display: none;
+  }
+
+  body .header .headerRight img{
+    margin: 0 20px 0 20px;
+  }
+
+  body .headerBar {
+    display: none;
+  }
+}
+
 .header {
   top: 0;
   width: 100%;
