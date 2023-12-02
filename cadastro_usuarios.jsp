@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="estilos/main.css">
   <link rel="stylesheet" href="estilos/rodape.css">
   <link rel="stylesheet" href="estilos/cabecalho.css">
-  <link rel="stylesheet" href="estilos/cadast_conteudo.css">
-  <link rel="stylesheet" href="estilos/sacola_conteudo.css">
+  <link rel="stylesheet" href="estilos/cadastro.css">
+  <link rel="stylesheet" href="estilos/sacola.css">
   <link rel="stylesheet" href="estilos/pagamento.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

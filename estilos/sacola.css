@@ -1,4 +1,8 @@
 @media (min-width: 200px) and (max-width: 1150px) {
+  body {
+    height: 1500px;
+  }
+
   .header .headerMiddle{
     display: none;
   }
@@ -55,6 +59,12 @@
 
   .finalizarCompra .temCupom .cupomInput button{
     margin-top: 10px;
+  }
+
+  #rodape {
+    margin-top: 100px;
+    position: fixed;
+
   }
 }
 
