@@ -1,6 +1,6 @@
 @media (min-width: 200px) and (max-width: 1150px) {
 
-  .endereco .sacola {
+  body .endereco .sacola {
     grid-template-columns: 1fr;
     padding: 0;
     margin-left: 0;
