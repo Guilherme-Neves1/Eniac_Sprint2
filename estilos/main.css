@@ -10,67 +10,6 @@ body {
 }
 
 @media (min-width: 200px) and (max-width: 1150px) {
-  .conteudo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin-top: -100px;
-    margin-bottom: -50px;
-
-  }
-
-  .conteudo .txtConteudo {
-    margin-top: 75px;
-  }
-
-  .conteudo .txtConteudo h1{
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-
-  }
-  
-  .conteudo .txtConteudo h2{
-    font-size: 17px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-  }
-
-  .boxLogin {
-    max-width: 350px;
-    padding: 20px;
-  }
-
-  .boxLogin .txtBoxCima .cimaUm{
-    font-size: 15px;
-  }
-  
-  .boxLogin .txtBoxCima .cimaDois{
-    font-size: 12px;
-  }
-
-  .boxLoginEmail .inputBox input {
-    padding: 10px;
-  
-  }
-
-  .boxLoginEmailTxt .txtLoginEmail {
-    font-size: 13px;
-  }
-
-  .otherOption span{
-    font-size: 13px;
-  }
-
-  .sectionGoogle img {
-    margin-left: -23px;
-  }
-
   #rodape .pagSeg{
     grid-template-columns: 1fr;
   }
