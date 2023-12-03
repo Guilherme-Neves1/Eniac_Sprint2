@@ -1,0 +1,318 @@
+@media (min-width: 200px) and (max-width: 1150px) {
+  .conteudo .txtConteudo h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+  }
+  
+  .conteudo .txtConteudo h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .boxLogin {
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .boxLogin .txtBoxCima .cimaUm{
+    font-size: 18px;
+  }
+  
+  .boxLogin .txtBoxCima .cimaDois{
+    font-size: 13px;
+  }
+
+  .boxLoginEmail .inputBox input {
+    padding: 10px;
+  
+  }
+
+  .boxLoginEmailTxt .txtLoginEmail {
+    font-size: 14px;
+  }
+
+  .otherOption span{
+    font-size: 14px;
+  }
+
+  .sectionGoogle img {
+    margin-left: -23px;
+  }
+}
+
+/*---------------------- CONTEÚDO TOTAL ----------------------*/
+.conteudo {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo h1 {
+  font-family: 'Cinzel', Arial;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.conteudo h2 {
+  font-family: 'Roboto', Arial;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*---------------------- CAIXA LOGIN ----------------------*/
+.txtConteudo {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.txtConteudo h1{
+  transition: 0.15s;
+}
+
+.boxLogin {
+  background-color: lightblue;
+  padding: 50px 50px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  width: 400px;
+}
+
+/*---------------------- CAIXA LOGIN - 1 ----------------------*/
+.txtBoxCima {
+  font-family: 'Noto Sans Mandaic';
+  line-height: 25px;
+}
+
+.txtBoxCima .cimaUm {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.txtBoxCima .cimaDois {
+  font-weight: 700;
+  color: rgb(63, 63, 63);
+  font-size: 15px;
+}
+
+/*---------------------- CAIXA LOGIN - 2 ----------------------*/
+.boxLoginEmail {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.boxLoginEmail .txtLoginEmail a{
+  text-decoration: none;
+  color: rgb(63, 63, 63);
+  transition: 0.15s;  
+}
+
+.boxLoginEmail .txtLoginEmail a:hover{
+  color: rgb(153, 64, 236)
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 1em;
+  transition: 0.25s;
+  transition: box-shadow 0.35s;
+}
+
+.inputBox input:hover {
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.15);
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.25s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+  color: rgba(0, 0, 0);
+  transform: translateX(15px) translateY(-10px);
+  font-size: 0.75em;
+  padding: 0 10px;
+  background-color: lightblue;
+  border-left: 1px solid rgb(153, 64, 236);
+  border-right: 1px solid rgb(153, 64, 236);
+  letter-spacing: 0.1em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid rgb(153, 64, 236);
+}
+
+.inputBox:nth-child(1) input:valid ~ span,
+.inputBox:nth-child(1) input:focus ~ span{
+  color: black;
+  background-color: rgba(153, 64, 236);
+  border-radius: 2px;
+}
+
+.boxLoginEmailTxt{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  color: rgb(63, 63, 63);
+  font-size: 15px;
+}
+
+.boxLoginEmail .txtLoginEmail {
+  position: absolute;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(153, 64, 236);
+  padding-bottom: 5px;
+  transition: padding-bottom 0.1s;
+  transition: color 0.15s;
+}
+
+.boxLoginEmail .txtLoginEmail:hover {
+  color: rgb(153, 64, 236);
+}
+
+
+.boxLoginEmail .txtLoginEmail:active {
+  transform: scale(1, 1);
+  padding-bottom: 1px;
+}
+
+/*---------------------- CAIXA LOGIN - 3 ----------------------*/
+.continueButton {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(153, 64, 236);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.15s;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.continueButton:hover {
+  background-color: rgba(153, 64, 236, 0.7);
+}
+
+.continueButton:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 0, inset 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+/*---------------------- CAIXA LOGIN - 4 ----------------------*/
+.otherOption {
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 18px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.otherOption span {
+  position: absolute;
+}
+
+.otherOption p {
+  font-family: 1rem;
+}
+
+.otherOption p::before,
+.otherOption p::after {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  width: 7em;
+  height: 0.05em;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: -7.25em;
+}
+
+.otherOption p::after {
+    left: initial;
+    right: -7.25em;
+}
+
+/*---------------------- CAIXA LOGIN - 5 ----------------------*/
+.sectionGoogle {
+  position: relative;
+}
+
+.sectionGoogle img {
+  box-sizing: content-box;
+  position: absolute;
+  padding-left: 85px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.googleButton {
+  font-family: 'Cinzel';
+  font-size: 16px;
+  color: rgb(95, 95, 95);
+  font-weight: bold;
+  background-color: rgb(240, 240, 240);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 10px 12px 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.googleButton:hover {
+  background-color: rgba(255, 255, 255,0.8);
+}
+
+.sectionGoogle {
+  transition: 0.15s;
+}
+
+.sectionGoogle:active {
+  transform: translate(0px, 2px);
+}
+
+/*---------------------- CAIXA LOGIN - 6 ----------------------*/
+.captcha {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

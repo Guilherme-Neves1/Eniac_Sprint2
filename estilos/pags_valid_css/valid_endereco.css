@@ -1,0 +1,241 @@
+@media (min-width: 200px) and (max-width: 1150px) {
+  body .box-endereco {
+    margin: 0px 10px;
+  }
+
+  body .txt-endereco h1{
+    font-size: 20px;
+  }
+  
+  body .form-endereco .endereco-lum,
+  body .form-endereco .endereco-ldois, 
+  body .form-endereco .endereco-lcinco,
+  body .form-endereco .endereco-lsete {
+  grid-template-columns: 1fr;
+  }
+
+  body .form-endereco .endereco-ltres {
+    grid-template-columns: 1fr;
+  }
+
+  body .form-endereco .endereco-lquatro {
+    grid-template-columns: 1fr;
+  }
+
+  body .form-endereco .endereco-ldois .ncep {
+    display: none;
+  }
+
+  body .form-endereco .endereco-ldois .uloc {
+    margin-top: 25px;
+  }
+
+  body .form-endereco .endereco-ltres .snum {
+    margin-top: 25px;
+  }
+
+  body .form-endereco .endereco-loito {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  body .form-endereco .endereco-loito .check-ende-box{
+    margin-bottom: 25px;
+  }
+
+}
+
+.txt-endereco {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.txt-endereco h1 {
+  font-family: 'Cinzel', Arial;
+}
+
+.box-endereco {
+  padding: 25px 20px;
+  background-color: rgba(211, 244, 245, 0.25);
+  border: 2px solid rgba(0, 0, 0, .15);
+  border-radius: 10px;
+  margin: 0px 100px;
+}
+
+.form-endereco .endereco-lum,
+.form-endereco .endereco-ldois, 
+.form-endereco .endereco-lcinco,
+.form-endereco .endereco-lsete {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+}
+
+.form-endereco .endereco-ldois .ncep {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+
+.form-endereco .endereco-ldois .ncep:hover{
+  color: rgb(153, 64, 236);
+}
+
+.form-endereco .endereco-ldois .uloc {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-endereco .endereco-ldois .uloc p {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.form-endereco .endereco-ldois .uloc p:hover {
+  color: rgb(153, 64, 236);
+}
+
+.form-endereco .endereco-ltres {
+  display: grid;
+  grid-template-columns: 2fr 10px 1fr 10px 1fr;
+}
+
+.form-endereco .endereco-ltres .snum {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-endereco .endereco-ltres .snum label{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.form-endereco .endereco-ltres .snum input[type=checkbox]{
+  margin-right: 5px;
+  height: 20px;
+  width: 25px;
+}
+
+.form-endereco .endereco-lquatro {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+}
+
+.form-endereco .endereco-lseis {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.form-endereco .endereco-lseis label {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(153, 64, 236);
+}
+
+.form-endereco .endereco-lseis input[type=checkbox]{
+  margin-right: 5px;
+  height: 18px;
+  width: 25px;
+}
+
+.form-endereco .endereco-loito {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+  margin-top: 25px;
+}
+
+.form-endereco .endereco-loito .check-ende{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-endereco .endereco-loito .check-ende-box{
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.form-endereco .endereco-loito .check-ende-box label{
+  color: rgb(153, 64, 236);
+  font-weight: 500;
+}
+
+.form-endereco .endereco-loito .check-ende input[type=checkbox]{
+  height: 18px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.form-endereco .endereco-loito .check-ende-buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-endereco .endereco-loito .check-ende-button {
+  margin-bottom: 25px;
+}
+
+.form-endereco .endereco-loito .check-ende-button button{
+  background-color: white;
+  border: 1px solid rgb(153, 64, 236);
+  border-radius: 5px;
+  color: rgb(153, 64, 236);
+  font-weight: 500;
+}
+
+.form-endereco .endereco-loito .check-ende-button-dois button {
+  background-color: rgb(153, 64, 236);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.form-endereco .endereco-loito .check-ende-button-dois button:hover {
+  background-color: rgba(153, 64, 236, 0.9);
+
+}
+
+.form-endereco .endereco-loito .check-ende-buttons button {
+  padding: 10px 25px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.form-endereco .endereco-loito .check-ende-buttons button:active {
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.25);
+  transform: translate(2px, 2px);
+}
+
+/*===============INPUT E LABEL =================*/
+.endereco-input-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.endereco-input-label label{
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 7px;
+}
+
+.endereco-input-label input,
+select {
+  font-size: 1em;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 5px;
+}
+

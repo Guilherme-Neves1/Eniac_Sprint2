@@ -1,0 +1,49 @@
+.header {
+  background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-tela-dobrada-seda-vermelha-texteis-de-luxo_107791-1214.jpg?size=626&ext=jpg&ga=GA1.1.146869147.1701582429&semt=ais");
+  background-size: 2000px;
+}
+
+.headerBar {
+  background-color: rgb(179, 7, 4);
+}
+
+.headerBar .atual {
+  color: rgb(211, 244, 245);
+  border-bottom: 1px solid rgb(211, 244, 245);
+  padding-bottom: 2.5px;
+}
+
+
+.linhaConteudo .linhaConteudoTxt {
+  background-image: url("https://img.freepik.com/vetores-gratis/cenario-de-seda-de-tecido-de-redemoinho-tecido-dobrado-de-vinil-luxuoso-dobrado-com-ondas-de-cetim-vortex-espiral-suave_33099-1542.jpg?size=626&ext=jpg");
+}
+
+.linhaConteudo .linhaConteudoTxt h1{
+  color: white;
+}
+
+.conteudoContainer .linhaProdutos .cadaProduto {
+  height: 470px;
+}
+
+.linhaProdutos .cadaProduto .prodIMG {
+  position: relative;
+  top: 0;
+}
+
+.linhaProdutos .cadaProduto .prodIMG img{
+  position: relative;
+}
+
+.linhaProdutos .cadaProduto .prodIMG p{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  background-color: rgb(179, 7, 4);
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 5px;
+  width: 100%;
+}

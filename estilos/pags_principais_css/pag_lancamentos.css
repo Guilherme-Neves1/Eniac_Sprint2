@@ -1,0 +1,62 @@
+@media (min-width:200px) and (max-width:1150px) {
+  body .linhaConteudo .linhaConteudoTxt {
+    justify-content: space-between;
+  }
+}
+
+.header {
+  background: url("https://img.freepik.com/vetores-gratis/projeto-de-fundo-aquarela-mancha-rosa_53876-100654.jpg?w=1380&t=st=1701582442~exp=1701583042~hmac=3379985c220ce89dcfea85f8fd5affb93928091d34026417e60b5cdfded38391");
+}
+
+.headerBar {
+  background-color: rgb(227, 185, 173);
+}
+
+.headerBar .atual {
+  color: rgb(211, 244, 245);
+  border-bottom: 1px solid rgb(211, 244, 245);
+  padding-bottom: 2.5px;
+}
+
+.conteudoContainer .linhaConteudo .linhaConteudoTxt {
+  background-image: url("https://img.freepik.com/vetores-gratis/abstrato-aquarela-suave_1055-8259.jpg?t=st=1701611225~exp=1701611825~hmac=2b838b31c37faee2e3a3d133c9aa26df76e8fd6d903fddbdb8cbeec4e116430d");
+  background-size: 2000px;
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: 55px;
+  justify-content: center;
+  text-align: center;
+}
+
+body .conteudoContainer .linhaConteudo .linhaConteudoTxt h1{
+font-family: 'Cinzel';
+font-weight: 500;
+font-size: 35px;
+}
+
+
+.conteudoContainer .linhaProdutos .cadaProduto {
+  height: 430px;
+}
+
+.linhaProdutos .cadaProduto .prodIMG {
+  position: relative;
+}
+
+.linhaProdutos .cadaProduto .prodIMG p {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(227, 185, 173);
+  color: rgb(119, 65, 50);
+  padding: 2.5px;
+  font-weight: 500;
+}
+
+.linhaProdutos .cadaProduto:hover .prodIMG p {
+  background-color: rgb(240, 196, 184);
+  color: rgba(119, 65, 50, 0.8);
+}

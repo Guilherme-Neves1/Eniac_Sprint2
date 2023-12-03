@@ -1,0 +1,35 @@
+.header {
+  background: url("https://img.freepik.com/vetores-gratis/fundo-abstrato-gradiente-monocromatico_52683-74300.jpg?size=626&ext=jpg&ga=GA1.1.146869147.1701582429&semt=ais");
+
+}
+
+.headerBar {
+  background-color: rgb(72, 186, 54);
+}
+
+.headerBar .atual {
+  color: rgb(211, 244, 245);
+  border-bottom: 1px solid rgb(211, 244, 245);
+  padding-bottom: 2.5px;
+}
+
+.linhaConteudo .linhaConteudoTxt {
+  background-image: url("https://img.freepik.com/vetores-gratis/vetor-de-fundo-aquarela-floral-primavera-em-verde-com-ilustracao-de-folhas_53876-126350.jpg?t=st=1701628096~exp=1701628696~hmac=04007255536163e4ada1142b82cb85dde6a91a18860554ff3549296373961aab");
+  background-size: 1200px;
+}
+
+.linhaConteudo .linhaProdutos {
+  grid-template-columns: 1fr 40px 1fr 40px 1fr;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto {
+  width: 100%;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto img{
+  transition: all 0.15s ease;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto:hover img {
+  opacity: 0.8;
+}

@@ -13,6 +13,10 @@
   .conteudoContainer .linhaConteudo .arrowRight{
     display: none;
   }
+
+  body .linhaConteudo .linhaConteudoTxt {
+    margin-bottom: 10px;
+  }
 }
 
 .conteudoContainer {
@@ -24,7 +28,18 @@
   letter-spacing: 0.5px;
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
+  padding: 25px 0;
+  justify-content: center;
+  text-align: center;
+  background-image: url("https://img.freepik.com/vetores-gratis/fundo-abstrato-aquarela-roxo_23-2149036193.jpg?w=1380&t=st=1701612537~exp=1701613137~hmac=55feb647c1fbe414fa4700f43a49be76df57af4f1484d979b0e16568d560fa17");
+  background-size: 2000px;
+}
+
+.linhaConteudo .linhaConteudoTxt h1{
+  font-family: 'Cinzel', Arial;
+  font-weight: 500;
+  font-size: 35px;
 }
 
 .linhaConteudo .linhaProdutos {
@@ -44,10 +59,10 @@
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
   cursor: pointer;
   transition: 0.15s;
+  height: 406px;
 }
 
 .linhaConteudo .linhaProdutos .cadaProduto:hover {
-  width: 250px;
   border: 1px solid rgba(77, 0, 128, 0.25);
   border-radius: 2.5px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);

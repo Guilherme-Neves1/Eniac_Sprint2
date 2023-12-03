@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realize seu Cadastro | O Boticário</title>
+
+  <!--------------------- ICON TITLE -------------------->
+	<link rel="icon" type="png" href=https://github.com/Guilherme-Neves1/Site-oBoticario/blob/main/_imagens/icone.JPG?raw=true>
+
+  <!--------------------- CSS -------------------->
+  <link rel="stylesheet" href="../estilos/padrao_todas_pags/main.css">
+  <link rel="stylesheet" href="../estilos/padrao_todas_pags/cabecalho.css">
+  <link rel="stylesheet" href="../estilos/padrao_todas_pags/rodape.css">
+  <link rel="stylesheet" href="../estilos/index.css">
+  <link rel="stylesheet" href="../estilos/pags_valid_css/valid_cadastro.css">
+
+  <!--------------------- FONTES -------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Noto+Sans+Mandaic&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!----------------------CABEÇALHO---------------------->
+<div class="header">
+  <div class="headerLeft">
+    <a href="../index.html" style="text-decoration: none; display: flex; align-items: center;">
+      <div class="logo">
+        <img src="../imagens/icons/logo-oboticario-marca.png" alt="Logo da oBoticário" id="oLogo">
+      </div>
+      
+      <h1>
+        oBoticário
+      </h1>
+    </a>
+  </div>
+
+  <div class="headerMiddle">
+    <input type="text" required placeholder="Aproveite as melhores ofertas">
+    <img src="../imagens/icons/icon-search.png" alt="search">
+  </div>
+
+  <div class="headerRight">
+    <img src="../imagens/icons/profile-icon.png" alt="profile">
+    <img src="../imagens/icons/icon-heart.png" alt="heart">
+    <img src="../imagens/icons/icon-market-car.png" alt="market-car">
+  </div>
+</div>
+
+<div class="headerBar">
+  <a href="../pags_principais_html/pag_lancamentos.html" style="text-decoration: none;">
+    <h1>LANÇAMENTOS</h1>
+  </a>
+  <a href="../pags_principais_html/pag_produtos.html" style="text-decoration: none;">
+    <h1>PRODUTOS</h1>
+  </a>
+  <a href="../pags_principais_html/pag_promocoes.html" style="text-decoration: none;">
+    <h1>PROMOÇÕES</h1>
+  </a>
+  <a href="../pags_principais_html/pag_dicas.html" style="text-decoration: none;">
+    <h1>DICAS</h1>
+  </a>
+</div>
+
+
+<!--------------------CONTEÚDO-------------------->
+  <nav class="conteudoCadastro">
+    <div class="marca">
+      <h1>
+        <a href="https://guilherme-neves1.github.io/Site-oBoticario/" style="text-decoration: none; color: black; font-family: 'Roboto'; font-size: 30px; font-weight: 500;">Crie sua conta</a>
+      </h1>
+    </div>
+    <div class="boxForm">
+      <form class="formInput" name="formCadastro" method="post" action="../cadastro_usuarios.jsp">
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" maxlength="60" id="email" required>
+        </div>
+
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" maxlength="30" id="nome" required>
+        </div>
+
+        <div>
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" name="sobrenome" maxlength="30" id="sobrenome" required>
+        </div>
+
+        <div>
+          <label for="cpf">CPF:</label>
+          <input type="tel" name="cpf"  id="cpf" maxlength="11" required max="5">
+        </div>
+
+        <div>
+          <label for="nascimento">Data de Nascimento:</label>
+          <input type="date" name="data_nasc" id="data_nasc" required>
+        </div>
+
+        <div>
+          <label for="celular">Celular:</label>
+          <input type="tel" name="celular" id="celular" required maxlength="11">
+        </div>
+
+        <div>
+          <label for="senha">Senha:</label>
+          <input type="password" name="senha" id="senha" required minlength="6">
+        </div>
+
+        <div class="reqCadast">
+          <p> &#10006; Mínimo um caractere especial</p>
+          <p> &#10006; Mínimo um número</p>
+          <p> &#10006; Mínimo uma letra maiúscula</p>
+          <p> &#10006; Mínimo uma letra minúscula</p>
+          <p> &#10006; Mínimo 6 caracteres</p>
+        </div>
+
+        <div class="generoTxt">
+          <div>
+            <h1 style="display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;">Com qual gênero você se identifica?</h1>
+          </div>
+          <div class="selectGen">
+            <div style="display: flex; align-items: center;">
+              <input name="genero" value="feminino" type="radio" checked style="margin: 0; width: 18px; height: 18px;">
+              <label for="feminino">Feminino</label>
+            </div>
+            
+            <div style="display: flex; align-items: center;">
+              <input name="genero" value="masculino" type="radio" style="margin: 0; width: 18px; height: 18px;">
+              <label for="masculino">Masculino</label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="termosCond">
+          <p>Os dados aqui coletados serão tratados nos termos de nossa <span style="color: rgb(153, 64, 236); border-bottom: 1px solid rgba(153, 64, 236); cursor: pointer;">Política de Privacidade.</span></p>
+        </div>
+
+        <div class="buttonCriarConta">
+          <input class="buttonCc" type="submit" value="Criar Conta">
+        </div>
+        <!-- <button>Criar Conta</button> -->
+
+      </form>
+    </div>
+  </nav>
+
+  <!------------------------------RODAPÉ------------------------------------>
+  <div id="rodape">
+    <div class="pagSeg">
+      <div id="meiosPagamento">
+        <div class="txtPag">
+          <p class="rodapeTexto">Meios de Pagamento</p>
+        </div>
+
+        <div class="imgPag">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-visa.svg" alt="visa">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-master.svg" alt="master">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-amex.svg" alt="amex">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-elo.svg" alt="elo">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-diners.svg" alt="diners">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-hipercard.svg" alt="hiper">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-boleto.svg" alt="boleto">
+          <img class="pix" src="../imagens/meios_pagamento/flag-pix.svg" alt="pix">
+        </div>
+      </div>
+
+      <div id="segurancaPagamento">
+        <div class="txtSeg">
+          <p class="rodapeTexto">Segurança</p>
+        </div>
+
+        <div class="imgSeg">
+          <img class="segurancaBandeira" src="../imagens/seguranca/security-100.svg" alt="secCem">
+          <img class="segurancaBandeira" src="../imagens/seguranca/security-google-icon.svg" alt="secGoogle">
+          <img class="segurancaBandeira" src="../imagens/seguranca/security-geotrust.svg" alt="secGeotrust">
+        </div>
+      </div>
+    </div>
+
+    <div class="obotiCopy">
+      <p class="rodapeTexto"> &#169; 2007-2023 O Boticário</p>
+    </div>
+  </div>
+</body>
+</html>
