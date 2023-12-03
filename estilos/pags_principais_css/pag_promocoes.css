@@ -16,6 +16,7 @@
 
 .linhaConteudo .linhaConteudoTxt {
   background-image: url("../../imagens/backgrounds/back-promocoes-txt.avif");
+  background-size: 1900px;
 }
 
 .linhaConteudo .linhaConteudoTxt h1{
