@@ -5,7 +5,7 @@
 }
 
 .header {
-  background: url("https://img.freepik.com/vetores-gratis/projeto-de-fundo-aquarela-mancha-rosa_53876-100654.jpg?w=1380&t=st=1701582442~exp=1701583042~hmac=3379985c220ce89dcfea85f8fd5affb93928091d34026417e60b5cdfded38391");
+  background: url("../../imagens/backgrounds/back-lancamentos-header.jpg");
 }
 
 .headerBar {
@@ -19,7 +19,7 @@
 }
 
 .conteudoContainer .linhaConteudo .linhaConteudoTxt {
-  background-image: url("https://img.freepik.com/vetores-gratis/abstrato-aquarela-suave_1055-8259.jpg?t=st=1701611225~exp=1701611825~hmac=2b838b31c37faee2e3a3d133c9aa26df76e8fd6d903fddbdb8cbeec4e116430d");
+  background-image: url("../../imagens/backgrounds/back-lancamentos-txt.jpg");
   background-size: 2000px;
   margin: 0;
   padding-bottom: 25px;

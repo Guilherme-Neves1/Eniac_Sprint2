@@ -1,5 +1,5 @@
 .header {
-  background-image: url("https://img.freepik.com/vetores-gratis/fundo-de-tela-dobrada-seda-vermelha-texteis-de-luxo_107791-1214.jpg?size=626&ext=jpg&ga=GA1.1.146869147.1701582429&semt=ais");
+  background-image: url("../../imagens/backgrounds/back-promocoes-header.avif");
   background-size: 2000px;
 }
 
@@ -15,7 +15,7 @@
 
 
 .linhaConteudo .linhaConteudoTxt {
-  background-image: url("https://img.freepik.com/vetores-gratis/cenario-de-seda-de-tecido-de-redemoinho-tecido-dobrado-de-vinil-luxuoso-dobrado-com-ondas-de-cetim-vortex-espiral-suave_33099-1542.jpg?size=626&ext=jpg");
+  background-image: url("../../imagens/backgrounds/back-promocoes-txt.avif");
 }
 
 .linhaConteudo .linhaConteudoTxt h1{

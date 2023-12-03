@@ -1,5 +1,5 @@
 .header {
-    background-image: url("https://img.freepik.com/fotos-gratis/muro-de-concreto-cinzento-claro_53876-89532.jpg?size=626&ext=jpg&ga=GA1.1.146869147.1701582429&semt=sph");
+    background-image: url("../../imagens/backgrounds/back-produtos-header.avif");
     background-size: 2000px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .linhaConteudo .linhaConteudoTxt {
-    background-image: url("https://img.freepik.com/fotos-gratis/textura-da-parede-do-grunge_1194-6108.jpg?size=626&ext=jpg&ga=GA1.1.146869147.1701582429&semt=sph");
+    background-image: url("../../imagens/backgrounds/back-produtos-txt.avif");
     background-size: 500px;
     margin: 0;
 }

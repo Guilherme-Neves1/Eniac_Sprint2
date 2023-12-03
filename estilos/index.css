@@ -32,8 +32,8 @@
   padding: 25px 0;
   justify-content: center;
   text-align: center;
-  background-image: url("https://img.freepik.com/vetores-gratis/fundo-abstrato-aquarela-roxo_23-2149036193.jpg?w=1380&t=st=1701612537~exp=1701613137~hmac=55feb647c1fbe414fa4700f43a49be76df57af4f1484d979b0e16568d560fa17");
-  background-size: 2000px;
+  background-image: url("../imagens/backgrounds/back-index-txt.jpg");
+  background-position: 50%;
 }
 
 .linhaConteudo .linhaConteudoTxt h1{

@@ -1,6 +1,5 @@
 .header {
-  background: url("https://img.freepik.com/vetores-gratis/fundo-abstrato-gradiente-monocromatico_52683-74300.jpg?size=626&ext=jpg&ga=GA1.1.146869147.1701582429&semt=ais");
-
+  background: url("../../imagens/backgrounds/back-dicas-header.avif");
 }
 
 .headerBar {
@@ -14,7 +13,7 @@
 }
 
 .linhaConteudo .linhaConteudoTxt {
-  background-image: url("https://img.freepik.com/vetores-gratis/vetor-de-fundo-aquarela-floral-primavera-em-verde-com-ilustracao-de-folhas_53876-126350.jpg?t=st=1701628096~exp=1701628696~hmac=04007255536163e4ada1142b82cb85dde6a91a18860554ff3549296373961aab");
+  background-image: url("../../imagens/backgrounds/back-dicas-txt.avif");
   background-size: 1200px;
 }
 
