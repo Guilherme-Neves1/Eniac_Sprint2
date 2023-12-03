@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endereço | O Boticário</title>
+  
+  <!--------------------- ICON TITLE -------------------->
+	<link rel="icon" type="png" href=https://github.com/Guilherme-Neves1/Site-oBoticario/blob/main/_imagens/icone.JPG?raw=true>
+
+  <!--------------------- CSS -------------------->
+  <link rel="stylesheet" href="estilos/main.css">
+  <link rel="stylesheet" href="estilos/rodape.css">
+  <link rel="stylesheet" href="estilos/cabecalho.css">
+  <link rel="stylesheet" href="estilos/endereco_cad.css">
+
+  <!--------------------- FONTES -------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Noto+Sans+Mandaic&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!----------------------CABEÇALHO---------------------->
+<div class="header">
+  <div class="headerLeft">
+    <div class="logo">
+      <img src="imagens/icons/logo-oboticario-marca.png" alt="Logo da oBoticário" id="oLogo">
+    </div>
+    
+    <h1>
+      oBoticário
+    </h1>
+  </div>
+
+  <div class="headerMiddle">
+    <input type="text" required placeholder="Aproveite as melhores ofertas">
+    <img src="imagens/icons/icon-search.png" alt="search">
+  </div>
+
+  <div class="headerRight">
+    <img src="imagens/icons/profile-icon.png" alt="profile">
+    <img src="imagens/icons/icon-heart.png" alt="heart">
+    <img src="imagens/icons/icon-market-car.png" alt="market-car">
+  </div>
+</div>
+
+<div class="headerBar">
+  <h1>LANÇAMENTOS</h1>
+  <h1>PRODUTOS</h1>
+  <h1>PROMOÇÕES</h1>
+  <h1>DICAS</h1>
+</div>
+
+<!--------------------------- CONTEÚDO ------------------------>
+<div class="container-endereco">
+  <div class="txt-endereco">
+    <h1>adicione um novo endereço</h1>
+  </div>
+
+  <div class="box-endereco">
+    <form class="form-endereco" action="oboti_valid_pag.html">
+      <div class="endereco-lum">
+        <div class="endereco-input-label">
+          <label class="txtInput" for="">Título do endereço: </label>
+          <input type="text" placeholder="Ex.: trabalho, casa...">
+        </div>
+
+        <div></div>
+
+        <div class="endereco-input-label">
+          <label for="">Tipo do local de entrega:</label>
+          <select name="" id="">
+            <option value="">Casa</option>
+            <option value="">Apartamento</option>
+            <option value="">Condomínio</option>
+            <option value="">Comercial</option>
+            <option value="">Rural</option>
+            <option value="">Outro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="endereco-ldois">
+        <div class="endereco-input-label">
+          <label for="">CEP:</label>
+          <input type="text" placeholder="12345-000">
+          <p class="ncep">Não sei meu CEP</p>
+        </div>
+
+        <div></div>
+
+        <div class="uloc">
+          <img src="imagens/icons/icon-location.png" width="20px" height="20px" style="cursor: pointer;" alt="icon-location">
+          <p>Usar localização atual</p>
+        </div>
+
+      </div>
+
+      <div class="endereco-ltres">
+        <div class="endereco-input-label">
+          <label for="">Endereço: </label>
+          <input type="text" placeholder="Ex.: Avenida, Rua...">
+        </div>
+
+        <div></div>
+
+        <div class="endereco-input-label">
+          <label for="">Número </label>  
+          <input type="text" placeholder="Ex.: 300">
+        </div>
+
+        <div></div>
+
+        <div class="snum">
+          <input type="checkbox">
+          <label for="">Sem número</label>
+        </div>
+      </div>
+
+      <div class="endereco-lquatro">
+        <div class="endereco-input-label">
+          <label for="">Complemento: </label>
+          <input type="text" placeholder="Ex.: Apto, Bloco...">
+        </div>
+
+        <div></div>
+
+        <div class="endereco-input-label">
+          <label for="">Bairro: </label>
+          <input type="text" placeholder="Ex.: Jardim Cumbica">
+        </div>
+      </div>
+
+      
+      <div class="endereco-lcinco">
+        <div class="endereco-input-label">
+          <label for="">Cidade/Estado: </label>
+          <input type="text" placeholder="Ex.: Guarulhos/SP">
+        </div>
+
+        <div></div>
+
+        <div class="endereco-input-label">
+          <label for="">Ponto de referência: </label>
+          <input type="text" placeholder="Ex.: Padaria">
+        </div>
+      </div>
+
+      <div class="endereco-lseis">
+        <input type="checkbox">
+        <label for="">O títular da conta é o mesmo que irá receber a encomenda</label>
+      </div>
+
+      <div class="endereco-lsete">
+        <div class="endereco-input-label">
+          <label for="">Nome de quem vai receber: </label>
+          <input type="text" placeholder="Ex.: Ana Júlia">
+        </div>
+
+        <div></div>
+
+        <div class="endereco-input-label">
+          <label for="">Sobrenome de quem vai receber:</label>
+          <input type="text" placeholder="Ex.: da Silva">
+        </div>
+      </div>
+
+      <div class="endereco-loito">
+        <div class="check-ende">
+          <div class="check-ende-box">
+            <input type="checkbox">
+            <label for="">Usar como endereço principal</label>
+          </div>
+
+          <div class="check-ende-box">
+            <input type="checkbox">
+            <label for="">Endereço de cobrança</label>
+          </div>
+        </div>
+
+        <div></div>
+
+        <div class="check-ende-buttons">
+          <div class="check-ende-button">
+            <button >CANCELAR</button>
+          </div>
+
+          <div class="check-ende-button-dois">
+            <button>SALVAR E CONTINUAR A COMPRA</button>
+          </div>
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+</div>
+
+
+<!----------------------- RODAPÉ ------------------------>
+<div id="rodape">
+  <div class="pagSeg">
+    <div id="meiosPagamento">
+      <div class="txtPag">
+        <p class="rodapeTexto">Meios de Pagamento</p>
+      </div>
+
+      <div class="imgPag">
+        <img class="bandeira" src="imagens/meios_pagamento/flag-visa.svg" alt="visa">
+        <img class="bandeira" src="imagens/meios_pagamento/flag-master.svg" alt="master">
+        <img class="bandeira" src="imagens/meios_pagamento/flag-amex.svg" alt="amex">
+        <img class="bandeira" src="imagens/meios_pagamento/flag-elo.svg" alt="elo">
+        <img class="bandeira" src="imagens/meios_pagamento/flag-diners.svg" alt="diners">
+        <img class="bandeira" src="imagens/meios_pagamento/flag-hipercard.svg" alt="hiper">
+        <img class="bandeira" src="imagens/meios_pagamento/flag-boleto.svg" alt="boleto">
+        <img class="pix" src="imagens/meios_pagamento/flag-pix.svg" alt="pix">
+      </div>
+    </div>
+
+    <div id="segurancaPagamento">
+      <div class="txtSeg">
+        <p class="rodapeTexto">Segurança</p>
+      </div>
+
+      <div class="imgSeg">
+        <img class="segurancaBandeira" src="imagens/seguranca/security-100.svg" alt="secCem">
+        <img class="segurancaBandeira" src="imagens/seguranca/security-google-icon.svg" alt="secGoogle">
+        <img class="segurancaBandeira" src="imagens/seguranca/security-geotrust.svg" alt="secGeotrust">
+      </div>
+    </div>
+  </div>
+
+  <div class="obotiCopy">
+    <p class="rodapeTexto"> &#169; 2007-2023 O Boticário</p>
+  </div>
+</div>
+</body>
+</html>

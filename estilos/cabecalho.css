@@ -38,6 +38,7 @@
 }
 
 .header .logo {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   display: flex;
   align-items: center;
   margin-right: 10px;
@@ -140,17 +141,17 @@
 }
 
 .headerBar {
-  background-color: lightblue;
-  font-size: 15px;
+  background-color: rgb(169, 99, 235);
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content: center;
   transition: 0.15s;
   height: 40px;
   align-items: center;
 }
 
 .headerBar h1{
+  margin-right: 100px;
+  font-weight: 400;
   font-size: 17px;
   color: black;
   cursor: pointer;
@@ -159,8 +160,8 @@
 }
 
 .headerBar h1:hover{
-  color: rgb(169, 99, 235);
-  border-bottom: 1px solid rgb(169, 99, 235);
+  color: rgb(211, 244, 245);
+  border-bottom: 1px solid rgb(211, 244, 245);
 }
 
 .headerBar h1:active{

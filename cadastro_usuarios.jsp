@@ -152,7 +152,7 @@
 
   out.print("<h1 class='finCad'>Seu cadastro foi realizado!</h1>");
   out.print("<br><br>");
-  out.print("<a href='https://guilherme-neves1.github.io/Eniac_Sprint2/oboti_valid_pag.html?email=54654654&senha=654546554654'> <button> Realizar o pagamento </button> </a>");
+  out.print("<a href='endereco_cad.html'> <button> Adicionar o endereço de entrega </button> </a>");
 
   %>
 </body>
