@@ -141,7 +141,7 @@
 }
 
 .headerBar {
-  background-color: rgb(169, 99, 235);
+  background-color: rgb(169, 99, 234);
   display: flex;
   justify-content: center;
   transition: 0.15s;
