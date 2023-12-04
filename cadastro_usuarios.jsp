@@ -42,6 +42,9 @@
 </div>
 
 <div class="headerBar">
+  <a href="../index.html" style="text-decoration: none;">
+    <h1>INÍCIO</h1>
+  </a>
   <a href="pags_principais_html/pag_lancamentos.html" style="text-decoration: none;">
     <h1>LAN&Ccedil;AMENTOS</h1>
   </a>

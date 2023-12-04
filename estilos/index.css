@@ -71,6 +71,12 @@
   }
 }
 
+.headerBar .atual {
+  color: rgb(211, 244, 245);
+  border-bottom: 1px solid rgb(211, 244, 245);
+  padding-bottom: 2.5px;
+}
+
 .conteudoContainer {
   margin-top: 50px;
 }
