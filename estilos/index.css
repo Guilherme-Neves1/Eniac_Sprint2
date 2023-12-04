@@ -1,4 +1,4 @@
-@media (min-width:200px) and (max-width:1150px) {
+@media (max-width:900px) {
   .conteudoContainer .linhaConteudo .linhaProdutos {
     grid-template-columns: 1fr;
     justify-content: space-around;
@@ -8,6 +8,58 @@
   .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto {
     margin-top: 50px;
     width: 250px;
+  }
+
+  .conteudoContainer .linhaConteudo .arrowRight{
+    display: none;
+  }
+
+  body .linhaConteudo .linhaConteudoTxt {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width:901px) and (max-width:1000px) {
+  .conteudoContainer .linhaConteudo .linhaProdutos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto,
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    margin-top: 50px;
+    width: 250px;
+    height: 406px;
+  }
+
+  body .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    display: inline;
+  }
+
+  .conteudoContainer .linhaConteudo .arrowRight{
+    display: none;
+  }
+
+  body .linhaConteudo .linhaConteudoTxt {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width:1001px) and (max-width:1450px) {
+  .conteudoContainer .linhaConteudo .linhaProdutos {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto,
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    margin-top: 50px;
+    width: 280px;
+    height: 450px;
+  }
+
+  body .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    display: inline;
   }
 
   .conteudoContainer .linhaConteudo .arrowRight{
@@ -52,7 +104,12 @@
   padding-right: 50px;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto {
+.linhaConteudo .linhaProdutos .cadaProdutoExtra {
+  display: none;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra {
   width: 250px;
   border: 1px solid rgba(77, 0, 128, 0.25);
   border-radius: 2.5px;
@@ -62,34 +119,39 @@
   height: 406px;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto:hover {
+.linhaConteudo .linhaProdutos .cadaProduto:hover,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra:hover {
   border: 1px solid rgba(77, 0, 128, 0.25);
   border-radius: 2.5px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
   cursor: pointer;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .cadaProdutoTxt {
+.linhaConteudo .linhaProdutos .cadaProduto .cadaProdutoTxt,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra .cadaProdutoTxt {
   padding: 5px;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .prodIMG img {
+.linhaConteudo .linhaProdutos .cadaProduto .prodIMG img,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra .prodIMG img {
   border-top-right-radius: 2.5px;
   border-top-left-radius: 2.5px;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .prodNAME h1 {
+.linhaConteudo .linhaProdutos .cadaProduto .prodNAME h1,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra .prodNAME h1 {
   font-size: 15px;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .prodNAME p {
+.linhaConteudo .linhaProdutos .cadaProduto .prodNAME p,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra .prodNAME p {
   font-size: 13px;
   padding-left: 5px;
 }
 
-.linhaConteudo .linhaProdutos .cadaProdutoTxt .prodPRICE{
+.linhaConteudo .linhaProdutos .cadaProdutoTxt .prodPRICE {
   font-weight: 700;
   margin-top: 10px;
   padding-left: 5px;
@@ -103,7 +165,8 @@
   font-size: 14px;
 }
 
-.cadaProduto .hoverProduto{
+.cadaProduto .hoverProduto,
+.cadaProdutoExtra .hoverProduto {
   opacity: 0;
   position: relative;
   margin-top: -85px;
@@ -113,22 +176,26 @@
   transition: 0.15s;
 }
 
-.cadaProduto:hover .hoverProduto{
+.cadaProduto:hover .hoverProduto,
+.cadaProdutoExtra:hover .hoverProduto {
   opacity: 1;
 }
 
-.cadaProduto .hoverProduto p{
+.cadaProduto .hoverProduto p,
+.cadaProdutoExtra .hoverProduto p {
   padding: 5px;
   font-size: 14px;
   font-weight: 700;
   color: rgb(169, 99, 235);
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .hoverProduto p:hover{
+.linhaConteudo .linhaProdutos .cadaProduto .hoverProduto p:hover,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra .hoverProduto p:hover {
   text-decoration: underline;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .buttonCompre button{
+.linhaConteudo .linhaProdutos .cadaProduto .buttonCompre button,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra .buttonCompre button {
   width: 100%;
   padding: 10px;
   background-color: rgb(169, 99, 235);
@@ -140,11 +207,13 @@
   color: white;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .buttonCompre button:hover{
+.linhaConteudo .linhaProdutos .cadaProduto .buttonCompre button:hover,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra .buttonCompre button:hover {
   opacity: 0.8;
 }
 
-.linhaConteudo .linhaProdutos .cadaProduto .buttonCompre button:active{
+.linhaConteudo .linhaProdutos .cadaProduto .buttonCompre button:active,
+.linhaConteudo .linhaProdutos .cadaProdutoExtra .buttonCompre button:active {
   transform: translate(0, 2px);
   opacity: 1;
 }

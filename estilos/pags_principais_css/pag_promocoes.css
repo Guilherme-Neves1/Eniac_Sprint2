@@ -1,3 +1,21 @@
+@media (min-width:901px) and (max-width:1000px) {
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto,
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    margin-top: 50px;
+    width: 250px;
+    height: 470px;
+  }
+}
+
+@media (min-width:1001px) and (max-width:1450px) {
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto,
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    margin-top: 50px;
+    width: 280px;
+    height: 480px;
+  }
+}
+
 .header {
   background-image: url("../../imagens/backgrounds/back-promocoes-header.avif");
   background-size: 2000px;
@@ -23,20 +41,24 @@
   color: white;
 }
 
-.conteudoContainer .linhaProdutos .cadaProduto {
+.conteudoContainer .linhaProdutos .cadaProduto,
+.conteudoContainer .linhaProdutos .cadaProdutoExtra {
   height: 470px;
 }
 
-.linhaProdutos .cadaProduto .prodIMG {
+.linhaProdutos .cadaProduto .prodIMG,
+.linhaProdutos .cadaProdutoExtra .prodIMG {
   position: relative;
   top: 0;
 }
 
-.linhaProdutos .cadaProduto .prodIMG img{
+.linhaProdutos .cadaProduto .prodIMG img,
+.linhaProdutos .cadaProdutoExtra .prodIMG img {
   position: relative;
 }
 
-.linhaProdutos .cadaProduto .prodIMG p{
+.linhaProdutos .cadaProduto .prodIMG p,
+.linhaProdutos .cadaProdutoExtra .prodIMG p {
   position: absolute;
   display: flex;
   justify-content: center;
