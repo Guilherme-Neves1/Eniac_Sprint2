@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JSP - Login</title>
-  <link rel="stylesheet" href="estilos/padrao_todas_pags/main.css">
-  <link rel="stylesheet" href="estilos/padrao_todas_pags/cabecalho.css">
-  <link rel="stylesheet" href="estilos/padrao_todas_pags/rodape.css">
-  <link rel="stylesheet" href="estilos/jsp.css">
+  <title>Cadastro Finalizado | O Boticário</title>
+  <link rel="stylesheet" href="../estilos/padrao_todas_pags/main.css">
+  <link rel="stylesheet" href="../estilos/padrao_todas_pags/cabecalho.css">
+  <link rel="stylesheet" href="../estilos/padrao_todas_pags/rodape.css">
+  <link rel="stylesheet" href="../estilos/jsp.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +18,9 @@
 <!----------------------CABEÇALHO---------------------->
 <div class="header">
   <div class="headerLeft">
-    <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+    <a href="../index.html" style="text-decoration: none; display: flex; align-items: center;">
       <div class="logo">
-        <img src="imagens/icons/logo-oboticario-marca.png" alt="Logo da oBoticário" id="oLogo">
+        <img src="../imagens/icons/logo-oboticario-marca.png" alt="Logo da oBoticário" id="oLogo">
       </div>
       
       <h1>
@@ -31,30 +31,30 @@
 
   <div class="headerMiddle">
     <input type="text" required placeholder="Aproveite as melhores ofertas">
-    <img src="imagens/icons/icon-search.png" alt="search">
+    <img src="../imagens/icons/icon-search.png" alt="search">
   </div>
 
   <div class="headerRight">
-    <img src="imagens/icons/profile-icon.png" alt="profile">
-    <img src="imagens/icons/icon-heart.png" alt="heart">
-    <img src="imagens/icons/icon-market-car.png" alt="market-car">
+    <img src="../imagens/icons/profile-icon.png" alt="profile">
+    <img src="../imagens/icons/icon-heart.png" alt="heart">
+    <img src="../imagens/icons/icon-market-car.png" alt="market-car">
   </div>
 </div>
 
 <div class="headerBar">
   <a href="../index.html" style="text-decoration: none;">
-    <h1>INÍCIO</h1>
+    <h1>IN&iacute;CIO</h1>
   </a>
-  <a href="pags_principais_html/pag_lancamentos.html" style="text-decoration: none;">
+  <a href="../pags_principais_html/pag_lancamentos.html" style="text-decoration: none;">
     <h1>LAN&Ccedil;AMENTOS</h1>
   </a>
-  <a href="pags_principais_html/pag_produtos.html" style="text-decoration: none;">
+  <a href="../pags_principais_html/pag_produtos.html" style="text-decoration: none;">
     <h1>PRODUTOS</h1>
   </a>
-  <a href="pags_principais_html/pag_promocoes.html" style="text-decoration: none;">
+  <a href="../pags_principais_html/pag_promocoes.html" style="text-decoration: none;">
     <h1>PROMO&Ccedil;&Otilde;ES</h1>
   </a>
-  <a href="pags_principais_html/pag_dicas.html" style="text-decoration: none;">
+  <a href="../pags_principais_html/pag_dicas.html" style="text-decoration: none;">
     <h1>DICAS</h1>
   </a>
 </div>
@@ -114,7 +114,7 @@
   conexao = DriverManager.getConnection(enderecoBanco, usuarioBanco, senhaUsuarioBanco);
 
   // Criar a variável sql como comando INSERT
-  String sql = "INSERT INTO cadastros (email, nome, sobrenome, cpf, data_nasc, celular, senha, genero) values (?, ?, ?, ?, ?, ?, ?, ?)";
+  String sql = "INSERT INTO usuario_cadastro (email, nome, sobrenome, cpf, data_nasc, celular, senha, genero) values (?, ?, ?, ?, ?, ?, ?, ?)";
 
   // Preparar o INSERT no MySQL, com um comando para substituir as interrogações
 	// stm é a variável7
@@ -137,7 +137,7 @@
   out.print("<br><br><br><br><br><br><br><br>");
   out.print("<h1 class='finCad'>Seu cadastro foi realizado com sucesso!</h1>");
   out.print("<br><br>");
-  out.print("<a href='pags_valid_html/valid_endereco.html'> <button> Adicione o endere&ccedil;o de entrega </button> </a>");
+  out.print("<a href='../pags_valid_html/valid_endereco.html'> <button> Adicione o endere&ccedil;o de entrega </button> </a>");
   out.print("<br><br><br><br><br><br><br><br>");
   out.print("<br><br><br><br><br><br><br><br>");
 
@@ -152,14 +152,14 @@
         </div>
 
         <div class="imgPag">
-          <img class="bandeira" src="imagens/meios_pagamento/flag-visa.svg" alt="visa">
-          <img class="bandeira" src="imagens/meios_pagamento/flag-master.svg" alt="master">
-          <img class="bandeira" src="imagens/meios_pagamento/flag-amex.svg" alt="amex">
-          <img class="bandeira" src="imagens/meios_pagamento/flag-elo.svg" alt="elo">
-          <img class="bandeira" src="imagens/meios_pagamento/flag-diners.svg" alt="diners">
-          <img class="bandeira" src="imagens/meios_pagamento/flag-hipercard.svg" alt="hiper">
-          <img class="bandeira" src="imagens/meios_pagamento/flag-boleto.svg" alt="boleto">
-          <img class="pix" src="imagens/meios_pagamento/flag-pix.svg" alt="pix">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-visa.svg" alt="visa">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-master.svg" alt="master">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-amex.svg" alt="amex">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-elo.svg" alt="elo">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-diners.svg" alt="diners">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-hipercard.svg" alt="hiper">
+          <img class="bandeira" src="../imagens/meios_pagamento/flag-boleto.svg" alt="boleto">
+          <img class="pix" src="../imagens/meios_pagamento/flag-pix.svg" alt="pix">
         </div>
       </div>
 
@@ -169,9 +169,9 @@
         </div>
 
         <div class="imgSeg">
-          <img class="segurancaBandeira" src="imagens/seguranca/security-100.svg" alt="secCem">
-          <img class="segurancaBandeira" src="imagens/seguranca/security-google-icon.svg" alt="secGoogle">
-          <img class="segurancaBandeira" src="imagens/seguranca/security-geotrust.svg" alt="secGeotrust">
+          <img class="segurancaBandeira" src="../imagens/seguranca/security-100.svg" alt="secCem">
+          <img class="segurancaBandeira" src="../imagens/seguranca/security-google-icon.svg" alt="secGoogle">
+          <img class="segurancaBandeira" src="../imagens/seguranca/security-geotrust.svg" alt="secGeotrust">
         </div>
       </div>
     </div>

@@ -158,10 +158,12 @@
   transition: 0.15s;
   height: 40px;
   align-items: center;
+  justify-items: end;
 }
 
-.headerBar h1{
-  margin-right: 100px;
+body .headerBar h1{
+  margin-left: 50px;
+  margin-right: 50px;
   font-weight: 400;
   font-size: 17px;
   color: black;

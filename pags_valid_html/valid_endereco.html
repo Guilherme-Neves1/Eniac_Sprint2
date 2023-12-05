@@ -73,24 +73,24 @@
   </div>
 
   <div class="box-endereco">
-    <form class="form-endereco" action="valid_pagamento.html">
+    <form class="form-endereco" action="../jsp_validacoes/usuario_endereco.jsp">
       <div class="endereco-lum">
         <div class="endereco-input-label">
           <label class="txtInput" for="">Título do endereço: </label>
-          <input type="text" placeholder="Ex.: trabalho, casa...">
+          <input name="titulo" type="text" placeholder="Ex.: trabalho, casa...">
         </div>
 
         <div></div>
 
         <div class="endereco-input-label">
           <label for="">Tipo do local de entrega:</label>
-          <select name="" id="">
-            <option value="">Casa</option>
-            <option value="">Apartamento</option>
-            <option value="">Condomínio</option>
-            <option value="">Comercial</option>
-            <option value="">Rural</option>
-            <option value="">Outro</option>
+          <select name="tipo">
+            <option value="Casa">Casa</option>
+            <option value="Apartamento">Apartamento</option>
+            <option value="Condomínio">Condomínio</option>
+            <option value="Comercial">Comercial</option>
+            <option value="Rural">Rural</option>
+            <option value="Outro">Outro</option>
           </select>
         </div>
       </div>
@@ -98,7 +98,7 @@
       <div class="endereco-ldois">
         <div class="endereco-input-label">
           <label for="">CEP:</label>
-          <input type="text" placeholder="12345-000">
+          <input name="cep" type="text" placeholder="12345-000">
           <p class="ncep">Não sei meu CEP</p>
         </div>
 
@@ -114,20 +114,20 @@
       <div class="endereco-ltres">
         <div class="endereco-input-label">
           <label for="">Endereço: </label>
-          <input type="text" placeholder="Ex.: Avenida, Rua...">
+          <input name="endereco" type="text" placeholder="Ex.: Avenida, Rua...">
         </div>
 
         <div></div>
 
         <div class="endereco-input-label">
           <label for="">Número </label>  
-          <input type="text" placeholder="Ex.: 300">
+          <input name="numero" type="text" placeholder="Ex.: 300">
         </div>
 
         <div></div>
 
         <div class="snum">
-          <input type="checkbox">
+          <input name="snumero" value="True" type="checkbox">
           <label for="">Sem número</label>
         </div>
       </div>
@@ -135,14 +135,14 @@
       <div class="endereco-lquatro">
         <div class="endereco-input-label">
           <label for="">Complemento: </label>
-          <input type="text" placeholder="Ex.: Apto, Bloco...">
+          <input name="complemento" type="text" placeholder="Ex.: Apto, Bloco...">
         </div>
 
         <div></div>
 
         <div class="endereco-input-label">
           <label for="">Bairro: </label>
-          <input type="text" placeholder="Ex.: Jardim Cumbica">
+          <input name="bairro" type="text" placeholder="Ex.: Jardim Cumbica">
         </div>
       </div>
 
@@ -150,33 +150,33 @@
       <div class="endereco-lcinco">
         <div class="endereco-input-label">
           <label for="">Cidade/Estado: </label>
-          <input type="text" placeholder="Ex.: Guarulhos/SP">
+          <input name="cidade_estado" type="text" placeholder="Ex.: Guarulhos/SP">
         </div>
 
         <div></div>
 
         <div class="endereco-input-label">
           <label for="">Ponto de referência: </label>
-          <input type="text" placeholder="Ex.: Padaria">
+          <input name="ponto_ref" type="text" placeholder="Ex.: Padaria">
         </div>
       </div>
 
       <div class="endereco-lseis">
-        <input type="checkbox">
+        <input name="titular_recebedor" value="True" type="checkbox">
         <label for="">O títular da conta é o mesmo que irá receber a encomenda</label>
       </div>
 
       <div class="endereco-lsete">
         <div class="endereco-input-label">
           <label for="">Nome de quem vai receber: </label>
-          <input type="text" placeholder="Ex.: Ana Júlia">
+          <input name="nome_recebedor" type="text" placeholder="Ex.: Ana Júlia">
         </div>
 
         <div></div>
 
         <div class="endereco-input-label">
           <label for="">Sobrenome de quem vai receber:</label>
-          <input type="text" placeholder="Ex.: da Silva">
+          <input name="sobrenome_recebedor" type="text" placeholder="Ex.: da Silva">
         </div>
       </div>
 
@@ -188,7 +188,7 @@
           </div>
 
           <div class="check-ende-box">
-            <input type="checkbox">
+            <input name="endereco_cobranca" value="True" type="checkbox">
             <label for="">Endereço de cobrança</label>
           </div>
         </div>
