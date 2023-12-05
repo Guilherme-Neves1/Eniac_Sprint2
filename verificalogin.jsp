@@ -20,7 +20,7 @@
     Connection conexao ;
 
     //Abrir a conexao com o banco de dados
-    conexao = DriverManager.getConnection(enderecoBanco, usuarioBanco, senhaUsuarioBanco);
+    conexao = DriverManager.getConnection(email, nome, senha);
 
     String sql = "SELECT * FROM usuario WHERE login = ? and senha: ? ";
 
