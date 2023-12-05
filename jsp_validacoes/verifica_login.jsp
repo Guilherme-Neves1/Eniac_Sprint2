@@ -59,89 +59,59 @@
   </a>
 </div>
 
-  <%@page language="java" import="java.sql.*" %>
-  <% 
-  /* Variáveis com informações difitadas pelo usuário, com print na tela JSP */
-    String email = request.getParameter("email");
-    String nome = request.getParameter("nome");
-    String sobrenome = request.getParameter("sobrenome");
-    String cpf = request.getParameter("cpf");
-    String data_nasc = request.getParameter("data_nasc");
-    String celular = request.getParameter("celular");
-    String senha = request.getParameter("senha");
-    String genero = request.getParameter("genero");
+<%@page language="java" import="java.sql.*" %>
+<%
+  // Variáveis que armazenam os valores digitados pelo usuário
+  String vemail = request.getParameter("email");
+  String vsenha = request.getParameter("senha");
 
-    /*
-    out.println(email+"<br>"+"<br>");
-    out.println(nome+"<br>"+"<br>");
-    out.println(sobrenome+"<br>"+"<br>");
-    out.println(cpf+"<br>"+"<br>");
-    out.println(data_nasc+"<br>"+"<br>");
-    out.println(celular+"<br>"+"<br>");
-    out.println(senha+"<br>"+"<br>");
-    out.println(genero+"<br>"+"<br>");
-    */
-  
-   // Variáveis para o Banco de Dados
-   // String nomeBanco
-   // String enderecoBanco
-   // String usuarioBanco
-   // String senhaUsuarioBanco
-
+  // Variáveis para o Banco de Dados
   String nomeBanco = "projeto_web";
   String enderecoBanco = "jdbc:mysql://localhost:3306/"+nomeBanco;
   String usuarioBanco = "root";
   String senhaUsuarioBanco = "";
 
-  // Variável para o Driver => padrão de comunicação entre JSP e o Banco de Dados
-  // Baixar o driver mysql-connector-java e colocar no caminho: C:\xampp\tomcat\lib 
-  // Abrir o arquivo connector com o WinRar e ver o caminho do driver
-  // "com.mysql.jdbc.Driver"
-  // Adiconar a variável String driver = "com.mysql.jdbc.Driver"
-
+  // Driver
   String driver = "com.mysql.jdbc.Driver";
-
+  
   // Carregar o driver na memória
-  // Usar o comando Class.forName(driver);
   Class.forName(driver);
 
   // Criar a variável para conectar com o Banco de Dados
-  // Ela veio junto com o import
-  // Connection nomeVariavel;
   Connection conexao;
 
   // Abrir a conexão com o Banco de Dados
   conexao = DriverManager.getConnection(enderecoBanco, usuarioBanco, senhaUsuarioBanco);
 
-  // Criar a variável sql como comando INSERT
-  String sql = "INSERT INTO usuario_cadastro (email, nome, sobrenome, cpf, data_nasc, celular, senha, genero) values (?, ?, ?, ?, ?, ?, ?, ?)";
+  // Criar o comando sql que ira consultar a tabela (SELECT)
+  String sql = "SELECT * FROM usuario_cadastro WHERE email=? AND senha=?";
 
-  // Preparar o INSERT no MySQL, com um comando para substituir as interrogações
-	// stm é a variável7
-  // os números são as interregações em sequência
+  // Criar o statement para executar o comando no Banco
   PreparedStatement stm = conexao.prepareStatement(sql);
 
-  stm.setString(1, email);
-  stm.setString(2, nome);
-  stm.setString(3, sobrenome);
-  stm.setString(4, cpf);
-  stm.setString(5, data_nasc);
-  stm.setString(6, celular);
-  stm.setString(7, senha);
-  stm.setString(8, genero);
+  stm.setString(1, vemail);
+  stm.setString(2, vsenha);
 
-  stm.execute();
-  stm.close();
+  // Criar uma variável para receber os dados
+  // TIPO VARIÁVEL = stm.executeQuery();
+  ResultSet dados = stm.executeQuery();
 
-  out.print("<br><br><br><br><br><br><br><br>");
-  out.print("<br><br><br><br><br><br><br><br>");
-  out.print("<h1 class='finCad'>Seu cadastro foi realizado com sucesso!</h1>");
-  out.print("<br><br>");
-  out.print("<a href='../pags_valid_html/valid_endereco.html'> <button> Adicione o endere&ccedil;o de entrega </button> </a>");
-  out.print("<br><br><br><br><br><br><br><br>");
-  out.print("<br><br><br><br><br><br><br><br>");
+  if (dados.next()) {
+    // Cria a sessão chamada usuario
+    session.setAttribute("usuario", dados.getString("nome"));
+    response.sendRedirect("../pags_valid_html/valid_endereco.html");
 
-  %>
+  }else{
+    out.print("<br><br><br><br><br><br><br><br>");
+    out.print("<br><br><br><br><br><br><br><br>");
+    out.print("<h1 class='finCad' style='font-size: 30px;'>Email ou senha incorretos!</h1>");
+    out.print("<h1 class='finCad' style='font-size: 20px;'>Tente novamente ou crie uma nova conta.</h1>");
+    out.print("<br><br>");
+    out.print("<a href='../pags_valid_html/valid_login.html'> <button> Tentar novamente </button> </a>");
+    out.print("<br><br><br><br><br><br><br><br>");
+    out.print("<br><br><br><br><br><br><br><br>");
+  }
+%>
 
   <!--------------------------- RODAPÉ ----------------------->
   <div id="rodape">
