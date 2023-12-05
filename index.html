@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>O Boticário</title>
+  <title>Página Principal | O Boticário</title>
   
   <!--------------------- ICON TITLE -------------------->
 	<link rel="icon" type="png" href=https://github.com/Guilherme-Neves1/Site-oBoticario/blob/main/_imagens/icone.JPG?raw=true>
 
   <!--------------------- CSS -------------------->
-  <link rel="stylesheet" href="estilos/main.css">
-  <link rel="stylesheet" href="estilos/rodape.css">
-  <link rel="stylesheet" href="estilos/cabecalho.css">
-  <link rel="stylesheet" href="estilos/sacola.css">
+  <link rel="stylesheet" href="estilos/padrao_todas_pags/main.css">
+  <link rel="stylesheet" href="estilos/padrao_todas_pags/cabecalho.css">
+  <link rel="stylesheet" href="estilos/padrao_todas_pags/rodape.css">
   <link rel="stylesheet" href="estilos/index.css">
 
   <!--------------------- FONTES -------------------->
@@ -26,13 +25,15 @@
 <!----------------------CABEÇALHO---------------------->
 <div class="header">
   <div class="headerLeft">
-    <div class="logo">
-      <img src="imagens/icons/logo-oboticario-marca.png" alt="Logo da oBoticário" id="oLogo">
-    </div>
-    
-    <h1>
-      oBoticário
-    </h1>
+    <a href="index.html" style="text-decoration: none; display: flex; align-items: center;">
+      <div class="logo">
+        <img src="imagens/icons/logo-oboticario-marca.png" alt="Logo da oBoticário" id="oLogo">
+      </div>
+      
+      <h1>
+        oBoticário
+      </h1>
+    </a>
   </div>
 
   <div class="headerMiddle">
@@ -48,10 +49,21 @@
 </div>
 
 <div class="headerBar">
-  <h1>LANÇAMENTOS</h1>
-  <h1>PRODUTOS</h1>
-  <h1>PROMOÇÕES</h1>
-  <h1>DICAS</h1>
+  <a href="index.html" style="text-decoration: none;">
+    <h1 class="atual">INÍCIO</h1>
+  </a>
+  <a href="pags_principais_html/pag_lancamentos.html" style="text-decoration: none;">
+    <h1>LANÇAMENTOS</h1>
+  </a>
+  <a href="pags_principais_html/pag_produtos.html" style="text-decoration: none;">
+    <h1>PRODUTOS</h1>
+  </a>
+  <a href="pags_principais_html/pag_promocoes.html" style="text-decoration: none;">
+    <h1>PROMOÇÕES</h1>
+  </a>
+  <a href="pags_principais_html/pag_dicas.html" style="text-decoration: none;">
+    <h1>DICAS</h1>
+  </a>
 </div>
 
 <!------------------------ CONTEÚDO --------------------------->
@@ -59,7 +71,7 @@
   <div class="linhaConteudo">
     <div class="linhaConteudoTxt">
       <h1>
-        Os itens mais vendidos!
+        Os itens mais vendidos
       </h1>
     </div>
 
@@ -67,7 +79,7 @@
       <!----------------------------- PRODUTO 1.1 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/B83529/Blend_Cardamom_Eau_Parfum_B83529.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-1.1.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -93,7 +105,7 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -105,7 +117,7 @@
       <!----------------------------- PRODUTO 1.2 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/B48359/ZAAD-EDP-50ml-V2_B48359_.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-1.2.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -131,7 +143,7 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -143,7 +155,7 @@
       <!----------------------------- PRODUTO 1.3 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/B48130/B48130_Malbec_Desodorante_Col%C3%B4nia_1.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-1.3.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -169,7 +181,7 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -181,7 +193,7 @@
       <!----------------------------- PRODUTO 1.4 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/B75877/Floratta-Fleur-Supreme-Eau-de-Parfum-B75877_.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-1.4.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -207,7 +219,7 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -219,7 +231,7 @@
       <!----------------------------- PRODUTO 1.5 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/B48573/Egeo-Des-Col-Dolce-Colors-90Ml-V2-B48573_.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-1.5.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -245,7 +257,46 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
+              <button>
+                COMPRE AGORA!
+              </button>
+            </a>
+            <p class="txtCompre">Veja mais</p>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------- PRODUTO 1.6 EXTRA ----------------------------------->
+      <div class="cadaProdutoExtra">
+        <div class="prodIMG">
+          <img src="imagens/produtos/img_index/img-index-1.6-EXTRA.webp" alt="">
+        </div>
+        
+        <div class="cadaProdutoTxt">
+          <div class="prodNAME">
+            <h1>
+              ACCORDES
+            </h1>
+            <p>
+              Harmonia Desodorante Colônia 80ml
+            </p>
+          </div>
+          
+          <div class="prodPRICE">
+            R$ 199,90
+          </div>
+          
+          <div class="prodDESC">
+            <p> 
+              Accordes Harmonia Desodorante Colônia é uma fragrância feminina e suave que combina perfeitamente com você.
+            </p>
+          </div>
+        </div>
+
+        <div class="hoverProduto">
+          <div class="buttonCompre">
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -256,7 +307,7 @@
       </div>
 
       <div class="arrowRight">
-        <img src="https://cdn-icons-png.flaticon.com/512/467/467152.png" alt="">
+        <img src="imagens/icons/icon-arrow-right.png" alt="">
       </div>
 
     </div>
@@ -273,7 +324,7 @@
       <!----------------------------- PRODUTO 2.1 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/product/B2023050715/1e3f1cbf-7f95-4217-9a55-b5e523a01ac3-bot-2023050715-nativa-spa-ameixa-creme-hidratante-refil-frontal-01.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-2.1.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -299,7 +350,7 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -311,7 +362,7 @@
       <!----------------------------- PRODUTO 2.2 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/B2022010202/B2022010202-Combo-Cuide-se-Bem-Pessegura_Locao_Refil_.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-2.2.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -337,7 +388,7 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -349,7 +400,7 @@
       <!----------------------------- PRODUTO 2.3 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/product/B2023081303/b2136175-c5dc-4d9d-b1e5-4f28942a8245-bot-2023081303-malbec-x-oleo-massagem-shower-gel.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-2.3.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -375,7 +426,7 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -387,7 +438,7 @@
       <!----------------------------- PRODUTO 2.4 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/B77990/LILY_CREM_ACET_HID_DES_CPO_LUMIERE_B77990.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-2.4.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -413,7 +464,7 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -425,7 +476,7 @@
       <!----------------------------- PRODUTO 2.5 ----------------------------------->
       <div class="cadaProduto">
         <div class="prodIMG">
-          <img src="https://res.cloudinary.com/beleza-na-web/image/upload/w_1500,f_auto,fl_progressive,q_auto:eco,w_210,h_210/v1/imagens/products/B2023040509/B2023040609_NATIVA-SPA_ORQUIDEA_CREME-HIDRATANTE_SERUM-CORPORAL.jpg" alt="">
+          <img src="imagens/produtos/img_index/img-index-2.5.webp" alt="">
         </div>
         
         <div class="cadaProdutoTxt">
@@ -451,7 +502,46 @@
 
         <div class="hoverProduto">
           <div class="buttonCompre">
-            <a href="oboti_valid_sacola.html">     
+            <a href="pags_valid_html/valid_sacola.html">     
+              <button>
+                COMPRE AGORA!
+              </button>
+            </a>
+            <p class="txtCompre">Veja mais</p>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------- PRODUTO 2.6 EXTRA ----------------------------------->
+      <div class="cadaProdutoExtra">
+        <div class="prodIMG">
+          <img src="imagens/produtos/img_index/img-index-2.6-EXTRA.webp" alt="">
+        </div>
+        
+        <div class="cadaProdutoTxt">
+          <div class="prodNAME">
+            <h1>
+              GLAMOUR
+            </h1>
+            <p>
+              Myriad Desodorante Colônia 75ml
+            </p>
+          </div>
+          
+          <div class="prodPRICE">
+            R$ 159,90
+          </div>
+          
+          <div class="prodDESC">
+            <p> 
+              Roube a cena em todos os momentos e por onde passar com o efeito magnético da fragrância de Glamour Myriad. 
+            </p>
+          </div>
+        </div>
+
+        <div class="hoverProduto">
+          <div class="buttonCompre">
+            <a href="pags_valid_html/valid_sacola.html">     
               <button>
                 COMPRE AGORA!
               </button>
@@ -462,7 +552,7 @@
       </div>
 
       <div class="arrowRight">
-        <img src="https://cdn-icons-png.flaticon.com/512/467/467152.png" alt="">
+        <img src="imagens/icons/icon-arrow-right.png" alt="">
       </div>
     </div>
   </div>

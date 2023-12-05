@@ -1,0 +1,371 @@
+@media (min-width: 200px) and (max-width: 1150px) {
+  body .endereco .sacola {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  body .sacola .sacolaFrete {
+    margin-top: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px black;
+
+  }
+
+  body .sacola .finalizarCompra {
+    margin-top: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px black;
+
+  }
+}
+
+/*----------------- SACOLA ----------------*/
+.sacola {
+  display: grid;
+  grid-template-columns: 1fr 370px;
+  justify-content: space-between;
+  column-gap: 50px;
+  padding: 50px 150px;
+  margin-top: 100px;
+}
+
+.sacola .sacolaFrete {
+  padding: 25px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 1px black;
+  border-radius: 10px;
+}
+
+.sacola .sacolaFrete h1{
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.sacola .sacolaFrete h1 span{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sacola .sacolaFrete .sacolaFreteProdutos {
+  margin-bottom: 25px;
+}
+
+.sacola .sacolaFreteInput {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.sacola .sacolaFreteInput input{
+  padding: 10px; 
+  outline-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 7px;
+  font-size: 1em;
+  transition: 0.15s;
+}
+
+.sacola .sacolaFreteInput input:valid,
+.sacola .sacolaFreteInput input:focus{
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sacola .sacolaFreteInput button{
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid rgb(153, 64, 236);
+  background-color: rgb(153, 64, 236);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.15s;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.sacola .sacolaFreteInput button:hover{
+  background-color: rgba(153, 64, 236,0.8);
+}
+
+.sacola .sacolaFreteInput button:active{
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), inset 2px 2px 3px rgba(0, 0, 0, 0.15);
+  transform: translate(1px, 1px);
+}
+
+.sacola .sacolaFreteInput p{
+  margin-left: 15px;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: gray;
+  letter-spacing: 0.7px;
+  transition: 0.15s;
+}
+
+.sacola .sacolaFreteInput p:hover{
+  color: rgb(153, 64, 236, 0.8);
+}
+
+.sacola .sacolaFretePrazo h2{
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.sacola .sacolaFrete .formaEntrega {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 25px;
+  line-height: 45px;
+  padding-bottom: 15px;
+}
+
+.formaEntrega .formaEntregaNormal{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formaEntregaNormal .entregaNormalInput {
+  font-size: 15px;
+  color: black;
+  padding-left: 15px;
+}
+
+.formaEntregaNormal .entregaNormalPreco h1{
+  font-size: 15px;
+  color: black;
+  padding-right: 15px;
+}
+
+/*------------------ LOJA ------------------*/
+.formaEntrega .formaEntregaLoja{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formaEntregaLoja .entregaLojaInput {
+  font-size: 15px;
+  color: black;
+  padding-left: 15px;
+}
+
+.formaEntregaLoja .entregaLojaInput p{
+  font-size: 12px;
+  line-height: 25px;
+  text-decoration: underline;
+  color: black;
+  padding-left: 15px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.formaEntregaLoja .entregaLojaInput p:hover{
+  color: rgb(153, 64, 236);
+}
+
+.formaEntregaLoja .entregaLojaPreco h1{
+  font-size: 15px;
+  color: rgb(153, 64, 236);
+  padding-right: 15px;
+}
+
+.prodQtdPrc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+
+}
+
+.sacolaFrete .prodQtdPrc h1{
+font-size: 16px;
+}
+
+/*--------------------- BOX FINALIZAR COMPRA ---------------------*/
+.finalizarCompra {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 1px black;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.finalizarCompra .finalizarCompraButton {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(153, 64, 236);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  transition: 0.15s;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.finalizarCompra .finalizarCompraButton:active {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), inset 2px 2px 3px rgba(0, 0, 0, 0.15);
+  transform: translate(2px, 2px);
+}
+
+.finalizarCompra .finalizarCompraButton:hover {
+  background-color: rgba(153, 64, 236, 0.9);
+}
+
+.finalizarCompra .finalizarCompraButtonDois {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(153, 64, 236);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  transition: 0.15s;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.finalizarCompra .finalizarCompraButtonDois:active {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), inset 2px 2px 3px rgba(0, 0, 0, 0.15);
+  transform: translate(2px, 2px);
+}
+
+.finalizarCompra .finalizarCompraButtonDois:hover {
+  background-color: rgba(153, 64, 236, 0.9);
+}
+
+.finalizarCompra .finalizarProdPrc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.finalizarCompra .finalizarProdPrc h1{
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+}
+
+.finalizarCompra .presente button {
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(153, 64, 236);
+  border-radius: 5px;
+  color: rgb(153, 64, 236);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(153, 64, 236);
+  transition: 0.15s;
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.finalizarCompra .presente button:hover {
+  background-color: rgb(153, 64, 236);
+  color: white;
+}
+
+.finalizarCompra .presente .imgButtonPresent {
+  box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.15);
+  transition: 0.15s;
+}
+
+.finalizarCompra .presente .imgButtonPresent:active {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), inset 2px 2px 2px 0.5px rgba(0, 0, 0, 0.15);
+  transform: translate(2px, 2px);
+}
+
+.presente .imgButtonPresent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.presente .imgButtonPresent img{
+  margin-left: 35px;
+  position: absolute;
+  width: 25px;
+  cursor: pointer;
+}
+
+.presente p{
+  text-align: justify;
+  font-size: 13px;
+  margin-top: 5px;
+  padding: 5px 15px 20px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/*-------------------------- SUBTOTAL --------------------------*/
+.sacola .finalizarCompra .subPrc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sacola .finalizarCompra .subPrc h1{
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+.finalizarCompra .temCupom {
+  background-color: rgba(158, 158, 158, 0.1);
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.finalizarCompra .temCupom h1{
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.finalizarCompra .temCupom input{
+  font-size: 1em;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  padding: 5px;
+  transition: 0.15s;
+}
+
+.finalizarCompra .temCupom input:active,
+.finalizarCompra .temCupom input:focus {
+  box-shadow: 0px 0px 5px black;
+}
+
+.temCupom .cupomInput button{
+  padding: 7px;
+  border: 3px solid rgb(153, 64, 236);
+  border-radius: 15px;
+  color: rgb(153, 64, 236);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0.15px rgba(0, 0, 0, 0.15);
+  transition: 0.15s;
+}
+
+.temCupom .cupomInput button:active{
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), inset 0 2px 5px 0.15px rgba(0, 0, 0, 0.15);;
+  transform: translate(0px, 2px);
+}
+
+.temCupom .cupomInput button:hover{
+  background-color: rgb(153, 64, 236);
+  color: white;
+}

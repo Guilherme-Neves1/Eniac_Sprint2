@@ -1,0 +1,102 @@
+@media (max-width:900px) { 
+  body .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto{
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  body .conteudoContainer .linhaConteudo .linhaProdutos {
+    width: 100%;
+    height: auto;
+    padding: 0 25px;
+  }
+}
+
+@media (min-width:901px) and (max-width:1000px) {
+  .conteudoContainer .linhaConteudo .linhaProdutos {
+    display: flex;
+  }
+
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto,
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 280px;
+    height: 350px;
+  }
+
+  body .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    display: inline;
+  }
+
+  .conteudoContainer .linhaConteudo .arrowRight{
+    display: none;
+  }
+
+  body .linhaConteudo .linhaConteudoTxt {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width:1001px) and (max-width:1450px) {
+  .conteudoContainer .linhaConteudo .linhaProdutos {
+    display: flex;
+  }
+
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProduto,
+  .conteudoContainer .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100%;
+    height: 350px;
+  }
+
+  body .linhaConteudo .linhaProdutos .cadaProdutoExtra {
+    display: inline;
+  }
+
+  .conteudoContainer .linhaConteudo .arrowRight{
+    display: none;
+  }
+
+  body .linhaConteudo .linhaConteudoTxt {
+    margin-bottom: 10px;
+  }
+}
+
+.header {
+  background: url("../../imagens/backgrounds/back-dicas-header.avif");
+}
+
+.headerBar {
+  background-color: rgb(72, 186, 54);
+}
+
+.headerBar .atual {
+  color: rgb(211, 244, 245);
+  border-bottom: 1px solid rgb(211, 244, 245);
+  padding-bottom: 2.5px;
+}
+
+.linhaConteudo .linhaConteudoTxt {
+  background-image: url("../../imagens/backgrounds/back-dicas-txt.avif");
+  background-size: 1200px;
+}
+
+.linhaConteudo .linhaProdutos {
+  grid-template-columns: 1fr 40px 1fr 40px 1fr;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto {
+  width: 100%;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto img{
+  transition: all 0.15s ease;
+}
+
+.linhaConteudo .linhaProdutos .cadaProduto:hover img {
+  opacity: 0.8;
+}

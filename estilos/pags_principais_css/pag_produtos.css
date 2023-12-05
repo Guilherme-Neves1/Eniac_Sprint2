@@ -1,0 +1,90 @@
+.header {
+    background-image: url("../../imagens/backgrounds/back-produtos-header.avif");
+    background-size: 2000px;
+}
+
+.headerBar {
+    background-color: rgb(202, 202, 202);
+}
+
+.headerBar .atual {
+    color: rgb(211, 244, 245);
+    border-bottom: 1px solid rgb(211, 244, 245);
+    padding-bottom: 2.5px;
+}
+
+.conteudoContainer .linhaProdutos .cadaProduto {
+    height: 430px;
+}
+
+.linhaConteudo .linhaConteudoTxt {
+    background-image: url("../../imagens/backgrounds/back-produtos-txt.avif");
+    background-size: 500px;
+    margin: 0;
+}
+
+.linhaConteudo .linhaConteudoTxt h1{
+    color: rgb(211, 244, 245);
+    font-weight: 700;
+}
+
+.linhaConteudo .ordenarProdutos {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+    background-color: rgb(163, 163, 163);
+    margin-bottom: 25px;
+}
+
+.linhaConteudo .ordenarProdutos p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.linhaConteudo .ordenarProdutos .ordenarProdutosSelect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linhaConteudo .ordenarProdutos .ordenarProdutosSelect p{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.linhaConteudo .ordenarProdutos .ordenarProdutosSelect select{
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.linhaConteudo .maisProdutos {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.linhaConteudo .maisProdutos button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid rgb(169, 99, 235);
+    border-radius: 5px;
+    color: rgb(169, 99, 235);
+    font-weight: 700;
+    width: 250px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.15s;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.linhaConteudo .maisProdutos button:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.linhaConteudo .maisProdutos button:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.15);
+    transform: translate(1px, 1px);
+}
