@@ -5,7 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consulta de Cadastros</title>
+  <title>Consulta de Endere&ccedil;os</title>
 
   <!--------------------- FONTES -------------------->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +18,10 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    div {
+      display: grid;
     }
 
     h1 {
@@ -78,7 +82,7 @@
     conexao = DriverManager.getConnection(enderecoBanco, usuarioBanco, senhaUsuarioBanco);
 
     // Criar o comando sql que ira consultar a tabela (SELECT)
-    String sql = "SELECT * FROM usuario_cadastro";
+    String sql = "SELECT * FROM usuario_endereco";
 
     // Criar o statement para executar o comando no Banco
     PreparedStatement stm = conexao.prepareStatement(sql);
@@ -87,19 +91,27 @@
     // TIPO VARIÁVEL = stm.executeQuery();
     ResultSet dados = stm.executeQuery();
 
-    out.print("<h1> Usuarios Cadastrados </h1>");
+    out.print("<div>");
+
+    out.print("<h1> Endere&ccedil;os Cadastrados </h1>");
 
     out.print("<table>");
     out.print("<tr>");
       out.print("<th>Codigo</th>");
-      out.print("<th>Email</th>");
-      out.print("<th>Nome</th>");
-      out.print("<th>Sobrenome</th>");
-      out.print("<th>CPF</th>");
-      out.print("<th>Data de Nascimento</th>");
-      out.print("<th>Celular</th>");
-      out.print("<th>Senha</th>");
-      out.print("<th>Genero</th>");
+      out.print("<th>Titulo</th>");
+      out.print("<th>Tipo</th>");
+      out.print("<th>CEP</th>");
+      out.print("<th>Endere&ccedil;o</th>");
+      out.print("<th>N&uacute;mero</th>");
+      out.print("<th>Sem N&uacute;mero</th>");
+      out.print("<th>Complemento</th>");
+      out.print("<th>Bairro</th>");
+      out.print("<th>Cidade/Estado</th>");
+      out.print("<th>Ponto de Refer&ecirc;cia</th>");
+      out.print("<th>Titular &eacute; recebedor</th>");
+      out.print("<th>Nome do Recebedor</th>");
+      out.print("<th>Sobrenome do Recebedor</th>");
+      out.print("<th>Endere&ccedil;o de Cobran&ccedil;a</th>");
     out.print("</tr>");
 
     while(dados.next())
@@ -110,40 +122,65 @@
         out.print("</td>");
 
         out.print("<td>");
-          out.print(dados.getString("email"));  
+          out.print(dados.getString("titulo"));  
         out.print("</td>");
 
         out.print("<td>");
-          out.print(dados.getString("nome"));
+          out.print(dados.getString("tipo"));
         out.print("</td>");
 
         out.print("<td>");
-          out.print(dados.getString("sobrenome"));
+          out.print(dados.getString("cep"));
         out.print("</td>");
 
         out.print("<td>");
-          out.print(dados.getString("cpf"));
+          out.print(dados.getString("endereco"));
         out.print("</td>");
 
         out.print("<td>");
-          out.print(dados.getString("data_nasc"));
+          out.print(dados.getString("numero"));
         out.print("</td>");
 
         out.print("<td>");
-          out.print(dados.getString("celular"));
+          out.print(dados.getString("snumero"));
         out.print("</td>");
 
         out.print("<td>");
-          out.print(dados.getString("senha"));
+          out.print(dados.getString("complemento"));
         out.print("</td>");
 
         out.print("<td>");
-          out.print(dados.getString("genero"));
-        out.print("</td>");        
+          out.print(dados.getString("bairro"));
+        out.print("</td>");  
+        
+        out.print("<td>");
+          out.print(dados.getString("cidade_estado"));
+        out.print("</td>");  
+
+        out.print("<td>");
+          out.print(dados.getString("ponto_ref"));
+        out.print("</td>");  
+
+        out.print("<td>");
+          out.print(dados.getString("titular_recebedor"));
+        out.print("</td>");  
+
+        out.print("<td>");
+          out.print(dados.getString("nome_recebedor"));
+        out.print("</td>");  
+
+        out.print("<td>");
+          out.print(dados.getString("sobrenome_recebedor"));
+        out.print("</td>");  
+
+        out.print("<td>");
+          out.print(dados.getString("endereco_cobranca"));
+        out.print("</td>");  
       out.print("</tr>");
     }
-
     out.print("</table>");
+
+    out.print("</div>");
   %>
   
 </body>
